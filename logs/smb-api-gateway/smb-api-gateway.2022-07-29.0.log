@@ -1,0 +1,317 @@
+2022-07-29 20:21:28 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 34610 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-29 20:21:28 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-29 20:21:31 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-07-29 20:21:31 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1659104492588 with initial instances count: 0
+2022-07-29 20:21:32 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659104492602, current=UP, previous=STARTING]
+2022-07-29 20:21:32 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 20:21:32 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 20:21:33 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 6.911 seconds (JVM running for 8.08)
+2022-07-29 20:22:02 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-29 20:22:02 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-29 20:22:02 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-29 20:22:02 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Application is null : false
+2022-07-29 20:22:02 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-29 20:22:02 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Application version is -1: false
+2022-07-29 20:22:02 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-29 20:22:02 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : The response status is 200
+2022-07-29 20:26:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 20:31:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 20:36:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 20:40:14 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 20:40:15 INFO   --- [reactor-http-epoll-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-29 20:41:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 20:46:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 20:51:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 20:56:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:01:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:06:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:11:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:16:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:21:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:26:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:31:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:36:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:41:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:46:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:51:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 21:56:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:01:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:06:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:11:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:16:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:21:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:26:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:31:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:36:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:39:47 INFO   --- [http-nio-8081-exec-4] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 22:39:47 INFO   --- [reactor-http-epoll-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-29 22:41:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:46:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:51:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 22:56:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:01:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:06:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:11:32 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:15:05 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659114905171, current=DOWN, previous=UP]
+2022-07-29 23:15:05 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:15:05 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:15:05 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-07-29 23:15:05 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-07-29 23:15:05 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-29 23:15:08 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-29 23:15:08 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - deregister  status: 200
+2022-07-29 23:15:08 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-29 23:15:18 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 40313 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-29 23:15:18 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-29 23:15:21 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-07-29 23:15:21 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1659114922514 with initial instances count: 2
+2022-07-29 23:15:22 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659114922528, current=UP, previous=STARTING]
+2022-07-29 23:15:22 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:15:22 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:15:24 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 7.463 seconds (JVM running for 8.339)
+2022-07-29 23:15:43 INFO   --- [http-nio-8081-exec-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 23:15:52 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 23:16:07 INFO   --- [http-nio-8081-exec-5] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 23:16:22 INFO   --- [http-nio-8081-exec-6] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 23:16:40 INFO   --- [http-nio-8081-exec-7] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 23:16:57 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659115017900, current=DOWN, previous=UP]
+2022-07-29 23:16:57 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:16:57 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:16:57 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-07-29 23:16:58 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-07-29 23:16:58 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-29 23:17:01 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-29 23:17:01 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - deregister  status: 200
+2022-07-29 23:17:01 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-29 23:17:08 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 40566 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-29 23:17:08 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-29 23:17:10 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-07-29 23:17:12 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-07-29 23:17:13 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-29 23:17:13 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:17:13 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-29 23:17:13 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-29 23:17:13 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-29 23:17:13 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-29 23:17:13 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-29 23:17:13 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-29 23:17:13 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-29 23:17:14 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-29 23:17:14 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-29 23:17:14 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-29 23:17:14 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1659115034028 with initial instances count: 2
+2022-07-29 23:17:14 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659115034042, current=UP, previous=STARTING]
+2022-07-29 23:17:14 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:17:14 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:17:18 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 10.555 seconds (JVM running for 11.366)
+2022-07-29 23:22:13 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:23:45 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 23:23:51 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659115431069, current=DOWN, previous=UP]
+2022-07-29 23:23:51 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:23:51 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:23:51 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-07-29 23:23:51 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-07-29 23:23:51 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-29 23:23:54 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-29 23:23:54 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - deregister  status: 200
+2022-07-29 23:23:54 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-29 23:23:59 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 40805 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-29 23:23:59 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-29 23:24:02 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-07-29 23:24:02 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1659115443556 with initial instances count: 1
+2022-07-29 23:24:03 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659115443569, current=UP, previous=STARTING]
+2022-07-29 23:24:03 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:24:03 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:24:04 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 6.07 seconds (JVM running for 7.062)
+2022-07-29 23:24:17 INFO   --- [http-nio-8081-exec-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 23:24:26 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659115466837, current=DOWN, previous=UP]
+2022-07-29 23:24:26 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:24:26 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:24:26 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-07-29 23:24:27 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-07-29 23:24:27 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-29 23:24:30 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-29 23:24:30 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - deregister  status: 200
+2022-07-29 23:24:30 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-29 23:44:32 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 41324 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-29 23:44:32 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-29 23:44:35 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-07-29 23:44:35 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1659116676740 with initial instances count: 1
+2022-07-29 23:44:36 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659116676752, current=UP, previous=STARTING]
+2022-07-29 23:44:36 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:44:36 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:44:38 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 6.925 seconds (JVM running for 7.858)
+2022-07-29 23:44:38 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659116678034, current=DOWN, previous=UP]
+2022-07-29 23:44:38 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:44:38 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:44:38 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-07-29 23:44:38 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-07-29 23:44:38 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-29 23:44:41 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-29 23:44:41 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - deregister  status: 200
+2022-07-29 23:44:41 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-29 23:48:33 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 41486 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-29 23:48:33 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-29 23:48:37 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-07-29 23:48:37 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-07-29 23:48:38 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-29 23:48:38 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:48:38 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-29 23:48:38 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-29 23:48:38 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-29 23:48:38 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-29 23:48:38 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-29 23:48:38 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-29 23:48:38 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-29 23:48:39 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-29 23:48:39 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-29 23:48:39 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-29 23:48:39 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1659116919486 with initial instances count: 1
+2022-07-29 23:48:39 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659116919504, current=UP, previous=STARTING]
+2022-07-29 23:48:39 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:48:39 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:48:40 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 8.83 seconds (JVM running for 9.704)
+2022-07-29 23:53:38 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:55:37 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659117337206, current=DOWN, previous=UP]
+2022-07-29 23:55:37 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:55:37 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:55:37 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-07-29 23:55:37 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-07-29 23:55:37 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-29 23:55:40 WARN   --- [DiscoveryClient-0] c.n.d.TimedSupervisorTask : task supervisor shutting down, can't accept the task
+2022-07-29 23:55:40 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-29 23:55:40 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - deregister  status: 200
+2022-07-29 23:55:40 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-29 23:55:51 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 41868 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-29 23:55:51 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-29 23:55:54 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-07-29 23:55:54 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1659117355575 with initial instances count: 2
+2022-07-29 23:55:55 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659117355588, current=UP, previous=STARTING]
+2022-07-29 23:55:55 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:55:55 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:55:56 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 5.998 seconds (JVM running for 7.015)
+2022-07-29 23:56:03 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 23:56:03 INFO   --- [reactor-http-epoll-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-29 23:58:49 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659117529033, current=DOWN, previous=UP]
+2022-07-29 23:58:49 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:58:49 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:58:49 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-07-29 23:58:49 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-07-29 23:58:49 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-29 23:58:52 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-29 23:58:52 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - deregister  status: 200
+2022-07-29 23:58:52 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-29 23:59:00 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 42035 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-29 23:59:00 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-29 23:59:03 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-07-29 23:59:03 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1659117544715 with initial instances count: 1
+2022-07-29 23:59:04 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1659117544729, current=UP, previous=STARTING]
+2022-07-29 23:59:04 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081: registering service...
+2022-07-29 23:59:04 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.106:smb-api-gateway:8081 - registration status: 204
+2022-07-29 23:59:06 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 6.05 seconds (JVM running for 6.82)
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : Request path = /catalogs/dockerMessages
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : host [localhost:8081]
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : user-agent [Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0]
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : accept [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8]
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : accept-language [en-US,en;q=0.5]
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : accept-encoding [gzip, deflate, br]
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : connection [keep-alive]
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : upgrade-insecure-requests [1]
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : sec-fetch-dest [document]
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : sec-fetch-mode [navigate]
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : sec-fetch-site [none]
+2022-07-29 23:59:18 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : sec-fetch-user [?1]
+2022-07-29 23:59:19 INFO   --- [reactor-http-epoll-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : Request path = /catalogs/dockerMessages
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : host [localhost:8081]
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : user-agent [Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0]
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : accept [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8]
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : accept-language [en-US,en;q=0.5]
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : accept-encoding [gzip, deflate, br]
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : connection [keep-alive]
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : upgrade-insecure-requests [1]
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : sec-fetch-dest [document]
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : sec-fetch-mode [navigate]
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : sec-fetch-site [none]
+2022-07-29 23:59:20 INFO   --- [http-nio-8081-exec-3] c.b.s.c.g.FirstPreLastPostGlobalFilter : sec-fetch-user [?1]
+2022-07-29 23:59:20 INFO   --- [reactor-http-epoll-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : Last Post Global Filter

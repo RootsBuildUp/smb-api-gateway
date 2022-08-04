@@ -1,0 +1,855 @@
+2022-07-24 00:00:24 INFO   --- [http-nio-8081-exec-9] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:00:24 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:00:26 INFO   --- [http-nio-8081-exec-1] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:00:27 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:03:20 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 00:03:23 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:03:27 INFO   --- [http-nio-8081-exec-4] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:03:35 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:03:36 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:03:55 INFO   --- [http-nio-8081-exec-10] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:03:56 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:04:04 INFO   --- [http-nio-8081-exec-4] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:04:04 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:04:06 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:04:06 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:06:28 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:06:28 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:06:30 INFO   --- [http-nio-8081-exec-10] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:06:31 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:07:20 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:07:21 INFO   --- [http-nio-8081-exec-4] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:07:30 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:08:14 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:08:14 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:08:16 INFO   --- [http-nio-8081-exec-10] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:08:16 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:08:20 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 00:10:03 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:10:05 INFO   --- [http-nio-8081-exec-4] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:10:07 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:10:09 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:10:58 INFO   --- [http-nio-8081-exec-10] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:10:59 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:11:00 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:11:01 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:12:00 INFO   --- [http-nio-8081-exec-4] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:12:00 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:12:02 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 00:12:02 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 00:12:18 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658599938081, current=DOWN, previous=UP]
+2022-07-24 00:12:18 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/rashedul-ThinkPad-X1-Yoga-1st:smb-api-gateway:8081: registering service...
+2022-07-24 00:12:18 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/rashedul-ThinkPad-X1-Yoga-1st:smb-api-gateway:8081 - registration status: 204
+2022-07-24 00:12:18 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-24 00:12:21 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-24 00:12:21 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/rashedul-ThinkPad-X1-Yoga-1st:smb-api-gateway:8081 - deregister  status: 200
+2022-07-24 00:12:21 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-24 10:04:58 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 6952 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-24 10:04:58 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1658635500939 with initial instances count: 0
+2022-07-24 10:05:00 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658635500942, current=UP, previous=STARTING]
+2022-07-24 10:05:00 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 10:05:01 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 10:05:01 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 3.606 seconds (JVM running for 4.573)
+2022-07-24 10:05:30 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-24 10:05:30 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-24 10:05:30 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-24 10:05:30 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Application is null : false
+2022-07-24 10:05:30 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-24 10:05:30 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Application version is -1: false
+2022-07-24 10:05:30 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-24 10:05:30 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : The response status is 200
+2022-07-24 10:10:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 10:15:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 10:20:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 10:25:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 10:30:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 10:35:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 10:40:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 10:45:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 10:50:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 10:55:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:00:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:05:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:10:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:15:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:20:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:25:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:30:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:35:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:40:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:45:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:50:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 11:55:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:00:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:05:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:10:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:15:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:20:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:25:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:30:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:35:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:40:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:45:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:50:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:55:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 12:55:03 INFO   --- [http-nio-8081-exec-1] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 12:55:03 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 12:55:12 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 12:55:13 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 13:00:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:05:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:10:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:12:15 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 13:12:15 WARN   --- [http-nio-8081-exec-6] o.s.c.l.c.RoundRobinLoadBalancer : No servers available for service: movie-catalog-service
+2022-07-24 13:12:16 INFO   --- [http-nio-8081-exec-7] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 13:12:16 WARN   --- [http-nio-8081-exec-7] o.s.c.l.c.RoundRobinLoadBalancer : No servers available for service: movie-catalog-service
+2022-07-24 13:13:08 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 13:13:08 WARN   --- [http-nio-8081-exec-8] o.s.c.l.c.RoundRobinLoadBalancer : No servers available for service: movie-catalog-service
+2022-07-24 13:13:09 INFO   --- [http-nio-8081-exec-9] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 13:13:09 WARN   --- [http-nio-8081-exec-9] o.s.c.l.c.RoundRobinLoadBalancer : No servers available for service: movie-catalog-service
+2022-07-24 13:15:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:20:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:25:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:30:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:32:00 INFO   --- [http-nio-8081-exec-1] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 13:32:01 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 13:32:04 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 13:32:04 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 13:35:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:40:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:45:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:50:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 13:55:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:00:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:05:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:10:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:14:33 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 14:14:33 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 14:15:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:20:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:25:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:30:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:33:04 INFO   --- [http-nio-8081-exec-9] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 14:33:04 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 14:34:58 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 14:34:58 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 14:35:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:35:46 INFO   --- [http-nio-8081-exec-5] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 14:35:46 WARN   --- [http-nio-8081-exec-5] o.s.c.l.c.RoundRobinLoadBalancer : No servers available for service: movie-catalog-service
+2022-07-24 14:35:47 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 14:35:48 WARN   --- [http-nio-8081-exec-6] o.s.c.l.c.RoundRobinLoadBalancer : No servers available for service: movie-catalog-service
+2022-07-24 14:37:38 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 14:37:38 INFO   --- [http-nio-8081-exec-9] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 14:37:38 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 14:37:38 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 14:40:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:45:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:50:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:53:55 INFO   --- [http-nio-8081-exec-4] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 14:53:55 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 14:55:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 14:55:04 INFO   --- [http-nio-8081-exec-7] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 14:55:04 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 14:55:47 INFO   --- [http-nio-8081-exec-10] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 14:55:47 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:00:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:05:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:08:27 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:08:27 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:08:28 INFO   --- [http-nio-8081-exec-5] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:08:28 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:08:28 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:08:28 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:08:28 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:08:28 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:08:57 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:08:57 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:08:57 INFO   --- [http-nio-8081-exec-5] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:08:57 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:08:57 INFO   --- [http-nio-8081-exec-7] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:08:57 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:08:57 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:08:57 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:09:22 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:09:22 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:09:22 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:09:22 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:10:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:11:16 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:11:16 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:11:16 INFO   --- [http-nio-8081-exec-10] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:11:16 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:11:16 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:11:16 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:11:16 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:11:16 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:12:51 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:12:51 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:12:51 INFO   --- [http-nio-8081-exec-10] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:12:51 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:12:51 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:12:51 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:12:51 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:12:51 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:15:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:15:27 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:15:27 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:15:27 INFO   --- [http-nio-8081-exec-10] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:15:27 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:15:27 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:15:27 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:15:27 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:15:27 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:20:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:25:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:30:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:32:19 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:32:19 INFO   --- [http-nio-8081-exec-9] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:32:19 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:32:20 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:32:21 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:32:21 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:32:21 INFO   --- [reactor-http-epoll-1] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:32:21 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:34:26 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:34:26 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:34:29 INFO   --- [http-nio-8081-exec-1] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:34:29 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:34:29 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:34:29 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:35:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:38:40 INFO   --- [http-nio-8081-exec-7] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:38:41 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 15:38:41 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:38:41 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 15:40:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:43:47 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658655827788, current=DOWN, previous=UP]
+2022-07-24 15:43:47 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 15:43:47 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 15:43:47 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-24 15:43:50 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-24 15:43:50 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - deregister  status: 200
+2022-07-24 15:43:50 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-24 15:44:57 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 44750 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-24 15:44:57 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-24 15:44:59 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-24 15:44:59 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:44:59 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-24 15:44:59 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-24 15:44:59 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-24 15:44:59 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-24 15:44:59 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-24 15:44:59 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-24 15:44:59 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-24 15:45:00 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-24 15:45:00 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-24 15:45:00 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-24 15:45:00 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1658655900292 with initial instances count: 2
+2022-07-24 15:45:00 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658655900294, current=UP, previous=STARTING]
+2022-07-24 15:45:00 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 15:45:00 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 15:45:01 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 4.124 seconds (JVM running for 4.985)
+2022-07-24 15:49:59 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:54:59 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 15:59:59 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:04:59 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:10:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:15:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:20:00 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:25:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:30:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:35:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:40:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:45:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:50:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 16:55:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:00:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:05:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:10:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:15:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:20:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:25:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:30:01 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:35:02 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:40:02 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:44:49 INFO   --- [http-nio-8081-exec-1] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 17:44:50 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 17:45:02 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:46:06 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658663166234, current=DOWN, previous=UP]
+2022-07-24 17:46:06 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 17:46:06 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 17:46:06 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-24 17:46:09 WARN   --- [DiscoveryClient-0] c.n.d.TimedSupervisorTask : task supervisor shutting down, can't accept the task
+2022-07-24 17:46:09 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-24 17:46:09 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - deregister  status: 200
+2022-07-24 17:46:09 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-24 17:46:19 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 54918 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-24 17:46:19 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-24 17:46:20 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-24 17:46:20 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1658663181354 with initial instances count: 3
+2022-07-24 17:46:21 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658663181356, current=UP, previous=STARTING]
+2022-07-24 17:46:21 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 17:46:21 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 17:46:22 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 4.028 seconds (JVM running for 5.135)
+2022-07-24 17:46:44 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 17:46:45 ERROR  --- [http-nio-8081-exec-2] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [6164c6ae]  500 Server Error for HTTP OPTIONS "/catalogs/1"
+java.lang.NullPointerException: The Mono returned by the supplier is null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:246)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP OPTIONS "/catalogs/1" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at java.base/java.util.Objects.requireNonNull(Objects.java:246)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:120)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:120)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onNext(MonoFilterWhen.java:149)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onSubscribe(MonoFilterWhen.java:112)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:251)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:98)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:44)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.request(FluxDematerialize.java:127)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:236)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onSubscribe(FluxDematerialize.java:77)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62)
+		at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:219)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxFlatMap.trySubscribeScalarMap(FluxFlatMap.java:203)
+		at reactor.core.publisher.MonoFlatMap.subscribeOrReturn(MonoFlatMap.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4385)
+		at org.springframework.http.server.reactive.ServletHttpHandlerAdapter.service(ServletHttpHandlerAdapter.java:198)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+2022-07-24 17:47:44 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 17:47:44 INFO   --- [http-nio-8081-exec-4] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 17:47:45 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 17:47:45 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 17:51:21 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 17:52:37 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658663557767, current=DOWN, previous=UP]
+2022-07-24 17:52:37 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 17:52:37 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 17:52:37 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-24 17:52:40 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-24 17:52:40 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - deregister  status: 200
+2022-07-24 17:52:40 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-24 18:00:35 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 55981 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-24 18:00:35 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1658664038546 with initial instances count: 2
+2022-07-24 18:00:38 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658664038548, current=UP, previous=STARTING]
+2022-07-24 18:00:38 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 18:00:38 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 18:00:39 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 4.625 seconds (JVM running for 5.59)
+2022-07-24 18:01:58 INFO   --- [http-nio-8081-exec-1] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:01:58 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:02:05 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:02:05 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:02:05 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:02:05 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:02:09 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:02:09 INFO   --- [http-nio-8081-exec-9] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:02:09 INFO   --- [reactor-http-epoll-4] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:02:09 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:05:38 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:05:41 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658664341892, current=DOWN, previous=UP]
+2022-07-24 18:05:41 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 18:05:41 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 18:05:41 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-24 18:05:44 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-24 18:05:44 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - deregister  status: 200
+2022-07-24 18:05:44 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-24 18:05:56 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 56231 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-24 18:05:56 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1658664358711 with initial instances count: 3
+2022-07-24 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658664358714, current=UP, previous=STARTING]
+2022-07-24 18:05:58 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 18:05:58 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 18:05:59 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 4.085 seconds (JVM running for 5.093)
+2022-07-24 18:06:16 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:06:16 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:06:16 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:06:16 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:06:22 INFO   --- [http-nio-8081-exec-5] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:06:22 ERROR  --- [http-nio-8081-exec-5] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [6da87420]  500 Server Error for HTTP OPTIONS "/catalogs/1"
+java.lang.UnsupportedOperationException: null
+	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP OPTIONS "/catalogs/1" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
+		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
+		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
+		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:120)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:120)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onNext(MonoFilterWhen.java:149)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onSubscribe(MonoFilterWhen.java:112)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:251)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:98)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:44)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.request(FluxDematerialize.java:127)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:236)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onSubscribe(FluxDematerialize.java:77)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62)
+		at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:219)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxFlatMap.trySubscribeScalarMap(FluxFlatMap.java:203)
+		at reactor.core.publisher.MonoFlatMap.subscribeOrReturn(MonoFlatMap.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4385)
+		at org.springframework.http.server.reactive.ServletHttpHandlerAdapter.service(ServletHttpHandlerAdapter.java:198)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+2022-07-24 18:07:04 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658664424262, current=DOWN, previous=UP]
+2022-07-24 18:07:04 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 18:07:04 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 18:07:04 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-24 18:07:07 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-24 18:07:07 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - deregister  status: 200
+2022-07-24 18:07:07 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-24 18:07:48 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 56526 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-24 18:07:48 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1658664470870 with initial instances count: 2
+2022-07-24 18:07:50 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658664470872, current=UP, previous=STARTING]
+2022-07-24 18:07:50 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 18:07:50 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 18:07:51 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 4.259 seconds (JVM running for 5.165)
+2022-07-24 18:07:59 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:07:59 ERROR  --- [http-nio-8081-exec-2] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [7896d298]  500 Server Error for HTTP OPTIONS "/catalogs/1"
+java.lang.UnsupportedOperationException: Unsupported Operation Exception
+	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP OPTIONS "/catalogs/1" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
+		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
+		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
+		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:120)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:120)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:282)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onNext(MonoFilterWhen.java:149)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+		at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onSubscribe(MonoFilterWhen.java:112)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:251)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:98)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onNext(FluxDematerialize.java:44)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:272)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:230)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.request(FluxDematerialize.java:127)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:236)
+		at reactor.core.publisher.FluxDematerialize$DematerializeSubscriber.onSubscribe(FluxDematerialize.java:77)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62)
+		at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:451)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:219)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:165)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:87)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+		at reactor.core.publisher.FluxFlatMap.trySubscribeScalarMap(FluxFlatMap.java:203)
+		at reactor.core.publisher.MonoFlatMap.subscribeOrReturn(MonoFlatMap.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4385)
+		at org.springframework.http.server.reactive.ServletHttpHandlerAdapter.service(ServletHttpHandlerAdapter.java:198)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+2022-07-24 18:10:12 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658664612884, current=DOWN, previous=UP]
+2022-07-24 18:10:12 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 18:10:12 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 18:10:12 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-24 18:10:15 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-24 18:10:15 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - deregister  status: 200
+2022-07-24 18:10:15 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-24 18:10:23 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 56683 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-24 18:10:23 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1658664625876 with initial instances count: 3
+2022-07-24 18:10:25 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658664625878, current=UP, previous=STARTING]
+2022-07-24 18:10:25 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 18:10:25 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 18:10:26 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 4.229 seconds (JVM running for 5.153)
+2022-07-24 18:10:35 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:10:52 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:10:53 INFO   --- [http-nio-8081-exec-4] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:10:54 INFO   --- [http-nio-8081-exec-5] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:13:28 INFO   --- [http-nio-8081-exec-8] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:13:28 INFO   --- [http-nio-8081-exec-9] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:13:28 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:13:28 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:13:39 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:14:03 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:14:03 INFO   --- [http-nio-8081-exec-4] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:14:03 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:14:03 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:15:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:20:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:25:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:30:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:35:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:37:57 INFO   --- [http-nio-8081-exec-9] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:37:57 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:38:03 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:38:03 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:38:03 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:38:03 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:38:08 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:38:08 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:40:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:45:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:50:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:55:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 18:57:31 INFO   --- [http-nio-8081-exec-1] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:57:31 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:57:31 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:57:31 INFO   --- [reactor-http-epoll-2] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 18:57:35 INFO   --- [http-nio-8081-exec-5] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 18:57:35 INFO   --- [reactor-http-epoll-3] c.b.s.c.FirstPreLastPostGlobalFilter : Last Post Global Filter
+2022-07-24 19:00:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 19:05:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 19:10:25 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 20:22:29 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 20:22:31 INFO   --- [http-nio-8081-exec-10] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 20:22:38 INFO   --- [http-nio-8081-exec-1] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 20:22:59 INFO   --- [http-nio-8081-exec-3] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 20:24:41 INFO   --- [http-nio-8081-exec-6] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
+2022-07-24 20:25:33 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658672733632, current=DOWN, previous=UP]
+2022-07-24 20:25:33 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081: registering service...
+2022-07-24 20:25:33 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - registration status: 204
+2022-07-24 20:25:33 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-24 20:25:36 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-24 20:25:36 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.10.46:smb-api-gateway:8081 - deregister  status: 200
+2022-07-24 20:25:36 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-24 20:25:47 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 59392 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-24 20:25:47 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-24 20:25:49 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-24 20:25:49 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 20:25:49 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-24 20:25:49 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-24 20:25:49 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-24 20:25:49 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-24 20:25:49 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-24 20:25:49 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-24 20:25:49 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-24 20:25:50 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-24 20:25:50 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-24 20:25:50 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-24 20:25:50 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1658672750087 with initial instances count: 3
+2022-07-24 20:25:50 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658672750089, current=UP, previous=STARTING]
+2022-07-24 20:25:50 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.11:smb-api-gateway:8081: registering service...
+2022-07-24 20:25:50 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.11:smb-api-gateway:8081 - registration status: 204
+2022-07-24 20:25:50 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 3.953 seconds (JVM running for 4.701)
+2022-07-24 20:27:50 INFO   --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.11:smb-api-gateway:8081 - Re-registering apps/SMB-API-GATEWAY
+2022-07-24 20:27:50 INFO   --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.11:smb-api-gateway:8081: registering service...
+2022-07-24 20:27:50 INFO   --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.11:smb-api-gateway:8081 - registration status: 204
+2022-07-24 20:28:29 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658672909011, current=DOWN, previous=UP]
+2022-07-24 20:28:29 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.11:smb-api-gateway:8081: registering service...
+2022-07-24 20:28:29 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.11:smb-api-gateway:8081 - registration status: 204
+2022-07-24 20:28:29 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-07-24 20:28:32 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-07-24 20:28:32 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.11:smb-api-gateway:8081 - deregister  status: 200
+2022-07-24 20:28:32 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-07-24 20:28:50 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 59716 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-07-24 20:28:50 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-07-24 20:28:52 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-07-24 20:28:52 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 20:28:52 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-07-24 20:28:52 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-07-24 20:28:52 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-07-24 20:28:52 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-07-24 20:28:52 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-07-24 20:28:52 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-07-24 20:28:52 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-07-24 20:28:53 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-07-24 20:28:53 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-07-24 20:28:53 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-24 20:28:53 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1658672933050 with initial instances count: 3
+2022-07-24 20:28:53 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1658672933053, current=UP, previous=STARTING]
+2022-07-24 20:28:53 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.11:smb-api-gateway:8081: registering service...
+2022-07-24 20:28:53 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_SMB-API-GATEWAY/192.168.0.11:smb-api-gateway:8081 - registration status: 204
+2022-07-24 20:28:53 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 4.58 seconds (JVM running for 5.508)
+2022-07-24 20:33:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 20:38:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 20:43:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 20:48:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 20:53:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 20:58:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:03:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:08:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:13:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:18:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:23:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:28:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:33:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:38:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:43:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:48:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:53:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 21:58:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:03:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:08:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:13:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:18:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:23:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:28:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:33:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:38:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:43:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:48:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:53:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 22:58:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:03:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:08:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:13:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:18:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:23:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:28:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:33:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:38:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:43:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:48:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:53:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-07-24 23:58:52 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration

@@ -1,0 +1,73 @@
+## dev, production, stage common binding config
+
+## spring config
+spring:
+  # Custom banner set in this application
+  banner:
+    charset: UTF-8
+    location : banner.txt
+  profiles:
+    active: dev
+  application:
+    name: @project.artifactId@
+    version: @project.version@
+    admin:
+      enabled: true
+  main:
+    lazy-initialization: true
+    web-application-type: reactive
+
+  ## Spring Jackson binding config
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+  ## Spring cloud gateway config
+  cloud:
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      filter:
+        circuit-breaker:
+          enabled: true
+
+## Eureka
+eureka:
+  instance:
+    prefer-ip-address: true
+    ease-renewal-interval-in-seconds: 30
+  client:
+    register-with-eureka: true
+    refresh:
+      enable: true
+  healthcheck:
+    enabled: true
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    web:
+      base-path: /actuator
+      exposure:
+        include: "*"
+    circuitbreakers:
+      enabled: true
+
+#log file write
+logging:
+  level:
+    org.springframework: WARN
+    org.springframework.security: WARN
+    org.hibernate: WARN
+    org.apache: WARN
+    com.babl.smbspringcloudgateway: INFO
+endpoints:
+  beans:
+    id: springbeans
+    sensitive: false
+    enabled: true

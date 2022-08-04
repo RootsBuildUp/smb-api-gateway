@@ -1,0 +1,30 @@
+server:
+  port: 8081
+
+## Database config
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.10.233:1521:ORCLCDB
+    username: smb_um
+    password: smb_um4321
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  main:
+    allow-bean-definition-overriding: true
+
+## Eureka client binding config
+## management config
+eureka:
+  instance:
+    status-page-url: ${EUREKA_SERVICE_URL:http://localhost:8081}/actuator
+    health-check-url: ${EUREKA_SERVICE_URL:http://localhost:8081}/actuator
+    home-page-url: ${EUREKA_SERVICE_URL:http://localhost:8081}/
+    metadata-map:
+      management.context-path: /actuator
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka
+
