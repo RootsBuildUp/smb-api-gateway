@@ -103,7 +103,7 @@ Consider the following:
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
@@ -191,7 +191,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 
 2022-07-26 22:48:06 INFO   --- [main] c.n.d.DiscoveryClient : Initial registry fetch from primary servers failed
 2022-07-26 22:48:06 WARN   --- [main] c.n.d.DiscoveryClient : Using default backup registry implementation which does not do anything.
@@ -1945,7 +1945,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -2017,7 +2017,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -2057,7 +2057,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)

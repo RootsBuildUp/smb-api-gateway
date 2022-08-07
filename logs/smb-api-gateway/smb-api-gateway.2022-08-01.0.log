@@ -164,16 +164,16 @@
 2022-08-01 10:12:21 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : accept-encoding [gzip, deflate, br]
 2022-08-01 10:12:21 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : connection [keep-alive]
 2022-08-01 10:12:21 ERROR  --- [http-nio-8081-exec-1] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [37179b33]  500 Server Error for HTTP GET "/catalogs/dockerMessages"
-com.babl.smbspringcloudgateway.exceptions.ObjectNotFoundException: Bearer Token Not Found or Invalid
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:108)
+exceptions.com.smb.springcloudgateway.ObjectNotFoundException: Bearer Token Not Found or Invalid
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:108)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ org.springframework.boot.actuate.metrics.web.reactive.server.MetricsWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ HTTP GET "/catalogs/dockerMessages" [ExceptionHandlingWebHandler]
 Original Stack Trace:
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:108)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:85)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:108)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:85)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -305,15 +305,15 @@ Original Stack Trace:
 2022-08-01 10:34:42 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : connection [keep-alive]
 2022-08-01 10:34:42 ERROR  --- [http-nio-8081-exec-1] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [52ba3154]  500 Server Error for HTTP GET "/catalogs/dockerMessages"
 java.lang.NullPointerException: null
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:113)
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:113)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ org.springframework.boot.actuate.metrics.web.reactive.server.MetricsWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ HTTP GET "/catalogs/dockerMessages" [ExceptionHandlingWebHandler]
 Original Stack Trace:
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:113)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:87)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:113)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:87)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -410,16 +410,16 @@ Original Stack Trace:
 2022-08-01 10:35:25 INFO   --- [http-nio-8081-exec-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : accept-encoding [gzip, deflate, br]
 2022-08-01 10:35:25 INFO   --- [http-nio-8081-exec-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : connection [keep-alive]
 2022-08-01 10:35:25 ERROR  --- [http-nio-8081-exec-2] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [870f915]  500 Server Error for HTTP GET "/catalogs/dockerMessages"
-com.babl.smbspringcloudgateway.exceptions.UserAccessException: Bearer Token not found
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:134)
+exceptions.com.smb.springcloudgateway.UserAccessException: Bearer Token not found
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:134)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ org.springframework.boot.actuate.metrics.web.reactive.server.MetricsWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ HTTP GET "/catalogs/dockerMessages" [ExceptionHandlingWebHandler]
 Original Stack Trace:
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:134)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:87)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:134)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:87)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -547,16 +547,16 @@ Original Stack Trace:
 2022-08-01 10:37:14 INFO   --- [http-nio-8081-exec-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : accept-encoding [gzip, deflate, br]
 2022-08-01 10:37:14 INFO   --- [http-nio-8081-exec-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : connection [keep-alive]
 2022-08-01 10:37:14 ERROR  --- [http-nio-8081-exec-2] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [2fc1dbf8]  500 Server Error for HTTP GET "/catalogs/dockerMessages"
-com.babl.smbspringcloudgateway.exceptions.UserAccessException: Bearer Token not found
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:136)
+exceptions.com.smb.springcloudgateway.UserAccessException: Bearer Token not found
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:136)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ org.springframework.boot.actuate.metrics.web.reactive.server.MetricsWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ HTTP GET "/catalogs/dockerMessages" [ExceptionHandlingWebHandler]
 Original Stack Trace:
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:136)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:87)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:136)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:87)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -686,7 +686,7 @@ java.lang.IllegalStateException: No ConfigurationProperties annotation found on 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
 2022-08-01 11:11:32 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 7790 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
 2022-08-01 11:11:32 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
 2022-08-01 11:11:33 ERROR  --- [main] o.s.b.SpringApplication : Application run failed
@@ -715,7 +715,7 @@ java.lang.IllegalStateException: No ConfigurationProperties annotation found on 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
 2022-08-01 11:12:24 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 7875 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
 2022-08-01 11:12:24 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
 2022-08-01 11:12:25 ERROR  --- [main] o.s.b.SpringApplication : Application run failed
@@ -744,7 +744,7 @@ java.lang.IllegalStateException: No ConfigurationProperties annotation found on 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:60)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:60)
 2022-08-01 11:12:55 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.15 on rashedul-ThinkPad-X1-Yoga-1st with PID 7961 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
 2022-08-01 11:12:55 INFO   --- [main] c.b.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
 2022-08-01 11:12:58 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
@@ -1608,8 +1608,8 @@ java.lang.IllegalStateException: No ConfigurationProperties annotation found on 
 2022-08-01 21:13:43 ERROR  --- [http-nio-8081-exec-5] o.h.e.j.s.SqlExceptionHelper : IO Error: The Network Adapter could not establish the connection
 2022-08-01 21:13:43 ERROR  --- [http-nio-8081-exec-5] o.s.w.s.a.HttpWebHandlerAdapter : [15b39d1c] 500 Server Error for HTTP GET "/catalogs/1"
 java.lang.NullPointerException: null
-	at com.babl.smbspringcloudgateway.service.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
-	at com.babl.smbspringcloudgateway.config.exception.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
+	at service.com.smb.springcloudgateway.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
+	at exception.config.com.smb.springcloudgateway.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
 	at org.springframework.web.server.handler.ExceptionHandlingWebHandler.lambda$handle$0(ExceptionHandlingWebHandler.java:77)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
@@ -1733,8 +1733,8 @@ Original Stack Trace:
 			at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 			at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 			at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
-			at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
+			at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 			at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -1842,8 +1842,8 @@ Original Stack Trace:
 		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-		at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
+		at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -1987,8 +1987,8 @@ Original Stack Trace:
 2022-08-01 21:38:53 ERROR  --- [http-nio-8081-exec-7] o.h.e.j.s.SqlExceptionHelper : IO Error: The Network Adapter could not establish the connection
 2022-08-01 21:38:53 ERROR  --- [http-nio-8081-exec-7] o.s.w.s.a.HttpWebHandlerAdapter : [3cc7897] 500 Server Error for HTTP GET "/catalogs/dockerMessages"
 java.lang.NullPointerException: null
-	at com.babl.smbspringcloudgateway.service.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
-	at com.babl.smbspringcloudgateway.config.exception.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
+	at service.com.smb.springcloudgateway.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
+	at exception.config.com.smb.springcloudgateway.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
 	at org.springframework.web.server.handler.ExceptionHandlingWebHandler.lambda$handle$0(ExceptionHandlingWebHandler.java:77)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
@@ -2112,8 +2112,8 @@ Original Stack Trace:
 			at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 			at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 			at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
-			at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
+			at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 			at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -2221,8 +2221,8 @@ Original Stack Trace:
 		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-		at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
+		at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -2361,8 +2361,8 @@ Original Stack Trace:
 2022-08-01 21:40:11 ERROR  --- [http-nio-8081-exec-9] o.h.e.j.s.SqlExceptionHelper : IO Error: The Network Adapter could not establish the connection
 2022-08-01 21:40:11 ERROR  --- [http-nio-8081-exec-9] o.s.w.s.a.HttpWebHandlerAdapter : [25653e7c] 500 Server Error for HTTP GET "/catalogs/dockerMessages"
 java.lang.NullPointerException: null
-	at com.babl.smbspringcloudgateway.service.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
-	at com.babl.smbspringcloudgateway.config.exception.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
+	at service.com.smb.springcloudgateway.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
+	at exception.config.com.smb.springcloudgateway.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
 	at org.springframework.web.server.handler.ExceptionHandlingWebHandler.lambda$handle$0(ExceptionHandlingWebHandler.java:77)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
@@ -2486,8 +2486,8 @@ Original Stack Trace:
 			at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 			at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 			at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
-			at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
+			at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 			at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -2595,8 +2595,8 @@ Original Stack Trace:
 		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-		at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
+		at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -2737,8 +2737,8 @@ Original Stack Trace:
 2022-08-01 21:45:59 ERROR  --- [http-nio-8081-exec-1] o.h.e.j.s.SqlExceptionHelper : HikariPool-1 - Interrupted during connection acquisition
 2022-08-01 21:45:59 ERROR  --- [http-nio-8081-exec-1] o.s.w.s.a.HttpWebHandlerAdapter : [58fef5af] 500 Server Error for HTTP null "/catalogs/dockerMessages"
 java.lang.NullPointerException: null
-	at com.babl.smbspringcloudgateway.service.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
-	at com.babl.smbspringcloudgateway.config.exception.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
+	at service.com.smb.springcloudgateway.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
+	at exception.config.com.smb.springcloudgateway.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
 	at org.springframework.web.server.handler.ExceptionHandlingWebHandler.lambda$handle$0(ExceptionHandlingWebHandler.java:77)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
@@ -2862,8 +2862,8 @@ Original Stack Trace:
 			at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 			at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 			at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
-			at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
+			at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 			at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -2970,8 +2970,8 @@ Original Stack Trace:
 		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-		at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
+		at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$192f5891.validateToken(<generated>)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:71)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -3262,7 +3262,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -3334,7 +3334,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -3374,7 +3374,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
 Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
@@ -3458,7 +3458,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -3530,7 +3530,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -3570,7 +3570,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:48)
 Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)

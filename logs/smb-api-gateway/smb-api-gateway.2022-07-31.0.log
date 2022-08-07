@@ -23,7 +23,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.WorkplaceUnit
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -67,7 +67,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.WorkplaceAssignmentCondition
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -111,7 +111,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.User
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -155,7 +155,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.Role
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -199,7 +199,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.Group
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -243,7 +243,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.User
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -287,7 +287,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.TaskRoute
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -331,7 +331,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.TaskRoute
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -375,7 +375,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.User
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -419,7 +419,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.WorkplaceAssignmentCondition
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -463,7 +463,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.WorkplaceAssignmentCondition
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -507,7 +507,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -551,7 +551,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -595,7 +595,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -639,7 +639,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -683,7 +683,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -727,7 +727,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:53)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -761,7 +761,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.repo.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.repo.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -793,7 +793,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:66)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:66)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -837,7 +837,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:66)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:66)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -881,7 +881,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:66)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:66)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -915,7 +915,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.repo.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.repo.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -947,7 +947,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:65)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:65)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -991,7 +991,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:65)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:65)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1203,7 +1203,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.repo.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.repo.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -1225,7 +1225,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.repo.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.repo.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -1257,7 +1257,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:66)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:66)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.user.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1301,7 +1301,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:66)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:66)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.user.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1345,7 +1345,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:65)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:65)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.user.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1389,7 +1389,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:62)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:62)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.user.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1423,7 +1423,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -1455,7 +1455,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:62)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:62)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.user.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1499,7 +1499,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:62)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:62)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.user.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1533,7 +1533,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -1555,7 +1555,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -1577,7 +1577,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -1599,7 +1599,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -1707,7 +1707,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.model.user.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -1769,7 +1769,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:41)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:41)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.user.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1813,7 +1813,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:41)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:41)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.user.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1857,7 +1857,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:41)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:41)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.model.user.BearerToken
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1988,16 +1988,16 @@ Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.bab
 2022-07-31 18:50:40 INFO   --- [http-nio-8081-exec-8] c.b.s.c.g.FirstPreLastPostGlobalFilter : cookie [JSESSIONID=D36F26159C28D22E9B72EE519A03C427]
 2022-07-31 18:50:40 ERROR  --- [http-nio-8081-exec-8] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [1310de8f]  500 Server Error for HTTP GET "/catalogs/dockerMessages"
 java.lang.NullPointerException: null
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.resolveFromAuthorizationHeader(FirstPreLastPostGlobalFilter.java:131)
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.resolveFromAuthorizationHeader(FirstPreLastPostGlobalFilter.java:131)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ org.springframework.boot.actuate.metrics.web.reactive.server.MetricsWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ HTTP GET "/catalogs/dockerMessages" [ExceptionHandlingWebHandler]
 Original Stack Trace:
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.resolveFromAuthorizationHeader(FirstPreLastPostGlobalFilter.java:131)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:104)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:80)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.resolveFromAuthorizationHeader(FirstPreLastPostGlobalFilter.java:131)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:104)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:80)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -2482,8 +2482,8 @@ Original Stack Trace:
 		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 		at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 		at com.sun.proxy.$Proxy157.findById(Unknown Source)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:111)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:82)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:111)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:82)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -2594,8 +2594,8 @@ Caused by: org.hibernate.exception.JDBCConnectionException: Unable to acquire JD
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy157.findById(Unknown Source)
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:111)
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:82)
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:111)
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:82)
 	at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 	at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 	at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -2841,16 +2841,16 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 2022-07-31 23:34:54 INFO   --- [http-nio-8081-exec-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : connection [keep-alive]
 2022-07-31 23:34:54 INFO   --- [http-nio-8081-exec-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : cookie [JSESSIONID=D36F26159C28D22E9B72EE519A03C427]
 2022-07-31 23:34:54 ERROR  --- [http-nio-8081-exec-2] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [18f588f8]  500 Server Error for HTTP GET "/catalogs/dockerMessages"
-com.babl.smbspringcloudgateway.exceptions.ObjectNotFoundException: Bearer Token Not Found or Invalid
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:107)
+exceptions.com.smb.springcloudgateway.ObjectNotFoundException: Bearer Token Not Found or Invalid
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:107)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ org.springframework.boot.actuate.metrics.web.reactive.server.MetricsWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ HTTP GET "/catalogs/dockerMessages" [ExceptionHandlingWebHandler]
 Original Stack Trace:
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:107)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:84)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:107)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:84)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -2978,16 +2978,16 @@ Original Stack Trace:
 2022-07-31 23:43:05 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : connection [keep-alive]
 2022-07-31 23:43:05 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : cookie [JSESSIONID=D36F26159C28D22E9B72EE519A03C427]
 2022-07-31 23:43:05 ERROR  --- [http-nio-8081-exec-1] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [591ce7f2]  500 Server Error for HTTP GET "/catalogs/dockerMessages"
-com.babl.smbspringcloudgateway.exceptions.ObjectNotFoundException: Bearer Token Not Found or Invalid
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:107)
+exceptions.com.smb.springcloudgateway.ObjectNotFoundException: Bearer Token Not Found or Invalid
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:107)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ org.springframework.boot.actuate.metrics.web.reactive.server.MetricsWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ HTTP GET "/catalogs/dockerMessages" [ExceptionHandlingWebHandler]
 Original Stack Trace:
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:107)
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:84)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.validateToken(FirstPreLastPostGlobalFilter.java:107)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:84)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)

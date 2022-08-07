@@ -30,8 +30,8 @@
 2022-08-04 00:22:29 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
 2022-08-04 00:22:29 ERROR  --- [http-nio-8081-exec-1] o.s.w.s.a.HttpWebHandlerAdapter : [1d9f4fb3] 500 Server Error for HTTP GET "/ratings/users/1"
 java.lang.NullPointerException: null
-	at com.babl.smbspringcloudgateway.service.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
-	at com.babl.smbspringcloudgateway.config.exception.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
+	at service.com.smb.springcloudgateway.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
+	at exception.config.com.smb.springcloudgateway.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
 	at org.springframework.web.server.handler.ExceptionHandlingWebHandler.lambda$handle$0(ExceptionHandlingWebHandler.java:77)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
@@ -147,8 +147,8 @@ Error has been observed at the following site(s):
 	*__checkpoint ⇢ HTTP GET "/ratings/users/1" [ExceptionHandlingWebHandler]
 Original Stack Trace:
 			at java.base/java.util.Optional.get(Optional.java:148)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService.validateToken(GlobalFilterSecurityService.java:60)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$FastClassBySpringCGLIB$$bf7ef57f.invoke(<generated>)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService.validateToken(GlobalFilterSecurityService.java:60)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$FastClassBySpringCGLIB$$bf7ef57f.invoke(<generated>)
 			at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 			at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
 			at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -159,8 +159,8 @@ Original Stack Trace:
 			at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 			at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 			at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$6c8c618d.validateToken(<generated>)
-			at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:75)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$6c8c618d.validateToken(<generated>)
+			at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:75)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 			at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -250,8 +250,8 @@ Original Stack Trace:
 2022-08-04 00:23:47 INFO   --- [http-nio-8081-exec-2] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
 2022-08-04 00:23:47 ERROR  --- [http-nio-8081-exec-2] o.s.w.s.a.HttpWebHandlerAdapter : [76abf4ae] 500 Server Error for HTTP GET "/ratings/users/1"
 java.lang.NullPointerException: null
-	at com.babl.smbspringcloudgateway.service.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
-	at com.babl.smbspringcloudgateway.config.exception.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
+	at service.com.smb.springcloudgateway.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
+	at exception.config.com.smb.springcloudgateway.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
 	at org.springframework.web.server.handler.ExceptionHandlingWebHandler.lambda$handle$0(ExceptionHandlingWebHandler.java:77)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
@@ -367,8 +367,8 @@ Error has been observed at the following site(s):
 	*__checkpoint ⇢ HTTP GET "/ratings/users/1" [ExceptionHandlingWebHandler]
 Original Stack Trace:
 			at java.base/java.util.Optional.get(Optional.java:148)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService.validateToken(GlobalFilterSecurityService.java:60)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$FastClassBySpringCGLIB$$bf7ef57f.invoke(<generated>)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService.validateToken(GlobalFilterSecurityService.java:60)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$FastClassBySpringCGLIB$$bf7ef57f.invoke(<generated>)
 			at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 			at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
 			at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -379,8 +379,8 @@ Original Stack Trace:
 			at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 			at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 			at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$6c8c618d.validateToken(<generated>)
-			at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:75)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$6c8c618d.validateToken(<generated>)
+			at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:75)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 			at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -501,8 +501,8 @@ Original Stack Trace:
 2022-08-04 00:27:40 INFO   --- [http-nio-8081-exec-1] c.b.s.c.g.FirstPreLastPostGlobalFilter : Pre-Filter executed
 2022-08-04 00:27:40 ERROR  --- [http-nio-8081-exec-1] o.s.w.s.a.HttpWebHandlerAdapter : [51fa212e] 500 Server Error for HTTP GET "/ratings/users/1"
 java.lang.NullPointerException: null
-	at com.babl.smbspringcloudgateway.service.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
-	at com.babl.smbspringcloudgateway.config.exception.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
+	at service.com.smb.springcloudgateway.GlobalExceptionHandleService.errorHandle(GlobalExceptionHandleService.java:20)
+	at exception.config.com.smb.springcloudgateway.GlobalExceptionHandler.handle(GlobalExceptionHandler.java:41)
 	at org.springframework.web.server.handler.ExceptionHandlingWebHandler.lambda$handle$0(ExceptionHandlingWebHandler.java:77)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
@@ -618,8 +618,8 @@ Error has been observed at the following site(s):
 	*__checkpoint ⇢ HTTP GET "/ratings/users/1" [ExceptionHandlingWebHandler]
 Original Stack Trace:
 			at java.base/java.util.Optional.get(Optional.java:148)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService.validateToken(GlobalFilterSecurityService.java:60)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$FastClassBySpringCGLIB$$bf7ef57f.invoke(<generated>)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService.validateToken(GlobalFilterSecurityService.java:60)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$FastClassBySpringCGLIB$$bf7ef57f.invoke(<generated>)
 			at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 			at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
 			at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -630,8 +630,8 @@ Original Stack Trace:
 			at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 			at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 			at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-			at com.babl.smbspringcloudgateway.service.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$5130761d.validateToken(<generated>)
-			at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:75)
+			at service.com.smb.springcloudgateway.GlobalFilterSecurityService$$EnhancerBySpringCGLIB$$5130761d.validateToken(<generated>)
+			at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:75)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 			at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 			at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)

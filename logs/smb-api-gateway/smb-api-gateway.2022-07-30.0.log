@@ -134,7 +134,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -206,7 +206,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -246,7 +246,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
@@ -330,7 +330,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -402,7 +402,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -442,7 +442,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
@@ -506,7 +506,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 1 of method customGatewayRoutes in com.babl.smbspringcloudgateway.config.gateway.CustomRouteLocator required a bean of type 'org.springframework.cloud.gateway.filter.factory.TokenRelayGatewayFilterFactory' that could not be found.
+Parameter 1 of method customGatewayRoutes in gateway.config.com.smb.springcloudgateway.CustomRouteLocator required a bean of type 'org.springframework.cloud.gateway.filter.factory.TokenRelayGatewayFilterFactory' that could not be found.
 
 
 Action:
@@ -541,7 +541,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributorRegistry]: Factory method 'healthContributorRegistry' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisHealthContributor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/redis/RedisHealthContributorAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redisHealthContributor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'OAuthTokenConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redis.hostname' in value "${redis.hostname}"
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
@@ -672,7 +672,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 1 of method customGatewayRoutes in com.babl.smbspringcloudgateway.config.gateway.CustomRouteLocator required a bean of type 'org.springframework.cloud.gateway.filter.factory.TokenRelayGatewayFilterFactory' that could not be found.
+Parameter 1 of method customGatewayRoutes in gateway.config.com.smb.springcloudgateway.CustomRouteLocator required a bean of type 'org.springframework.cloud.gateway.filter.factory.TokenRelayGatewayFilterFactory' that could not be found.
 
 
 Action:
@@ -694,7 +694,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 1 of method customGatewayRoutes in com.babl.smbspringcloudgateway.config.gateway.CustomRouteLocator required a bean of type 'org.springframework.cloud.gateway.filter.factory.TokenRelayGatewayFilterFactory' that could not be found.
+Parameter 1 of method customGatewayRoutes in gateway.config.com.smb.springcloudgateway.CustomRouteLocator required a bean of type 'org.springframework.cloud.gateway.filter.factory.TokenRelayGatewayFilterFactory' that could not be found.
 
 
 Action:
@@ -746,7 +746,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field filterFactory in com.babl.smbspringcloudgateway.config.gateway.CustomRouteLocator required a bean of type 'org.springframework.cloud.gateway.filter.factory.TokenRelayGatewayFilterFactory' that could not be found.
+Field filterFactory in gateway.config.com.smb.springcloudgateway.CustomRouteLocator required a bean of type 'org.springframework.cloud.gateway.filter.factory.TokenRelayGatewayFilterFactory' that could not be found.
 
 
 Action:
@@ -1142,7 +1142,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -1214,7 +1214,7 @@ java.sql.SQLRecoverableException: IO Error: The Network Adapter could not establ
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
 	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:445)
 	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:464)
@@ -1254,7 +1254,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:44)
 Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
@@ -1502,7 +1502,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field bearerTokenRepository in com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.repo.BearerTokenRepository' that could not be found.
+Field bearerTokenRepository in gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter required a bean of type 'com.babl.smbummodel.repo.BearerTokenRepository' that could not be found.
 
 
 Action:
@@ -1534,7 +1534,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.WorkflowSeriesEntity
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
@@ -1578,7 +1578,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.babl.smbspringcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
+	at com.smb.springcloudgateway.SpringCloudGatewayApplication.main(SpringCloudGatewayApplication.java:51)
 Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.babl.smbummodel.Role
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
 	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)

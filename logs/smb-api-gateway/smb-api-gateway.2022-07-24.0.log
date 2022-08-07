@@ -479,13 +479,13 @@ Original Stack Trace:
 2022-07-24 18:06:22 INFO   --- [http-nio-8081-exec-5] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
 2022-07-24 18:06:22 ERROR  --- [http-nio-8081-exec-5] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [6da87420]  500 Server Error for HTTP OPTIONS "/catalogs/1"
 java.lang.UnsupportedOperationException: null
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ HTTP OPTIONS "/catalogs/1" [ExceptionHandlingWebHandler]
 Original Stack Trace:
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
@@ -597,13 +597,13 @@ Original Stack Trace:
 2022-07-24 18:07:59 INFO   --- [http-nio-8081-exec-2] c.b.s.c.FirstPreLastPostGlobalFilter : Pre-Filter executed
 2022-07-24 18:07:59 ERROR  --- [http-nio-8081-exec-2] o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler : [7896d298]  500 Server Error for HTTP OPTIONS "/catalogs/1"
 java.lang.UnsupportedOperationException: Unsupported Operation Exception
-	at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
+	at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
 	*__checkpoint ⇢ HTTP OPTIONS "/catalogs/1" [ExceptionHandlingWebHandler]
 Original Stack Trace:
-		at com.babl.smbspringcloudgateway.config.gateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
+		at gateway.config.com.smb.springcloudgateway.FirstPreLastPostGlobalFilter.filter(FirstPreLastPostGlobalFilter.java:42)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
 		at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
 		at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
