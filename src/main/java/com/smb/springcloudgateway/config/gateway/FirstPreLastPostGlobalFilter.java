@@ -36,28 +36,11 @@ public class FirstPreLastPostGlobalFilter
     @Autowired
     private GlobalFilterSecurityService securityService;
 
-    final Logger logger =
-            LoggerFactory.getLogger(FirstPreLastPostGlobalFilter.class);
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange,
                              GatewayFilterChain chain) {
-        logger.info("Pre-Filter executed");
-        ServerHttpRequest httpRequest = exchange.getRequest();
-        ServerHttpResponse httpResponse = exchange.getResponse();
-
-        if ("OPTIONS".equalsIgnoreCase(httpRequest.getMethod().toString())) {
-            httpResponse.setStatusCode(HttpStatus.OK);
-            return Mono.empty();
-        } else {
-            securityService.validateToken(httpRequest, httpResponse);
-            return chain.filter(exchange)
-                    .then(Mono.fromRunnable(() -> {
-                        logger.info("Last Post Global Filter");
-
-                    }));
-        }
-
+        return securityService.filter(exchange,chain);
     }
 
     @Override

@@ -8,10 +8,10 @@
 		<version>2.6.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.babl</groupId>
-	<artifactId>smb-api-gateway</artifactId>
+	<groupId>com.smb</groupId>
+	<artifactId>api-gateway</artifactId>
 	<version>0.0.1</version>
-	<name>smb-api-gateway</name>
+	<name>api-gateway</name>
 	<description>A service for common api gateway</description>
 	<properties>
 		<java.version>11</java.version>
@@ -79,8 +79,8 @@
 			<version>12.1.0</version>
 		</dependency>
 		<dependency>
-			<groupId>com.babl</groupId>
-			<artifactId>smb-um-model</artifactId>
+			<groupId>com.smb</groupId>
+			<artifactId>um-model</artifactId>
 			<version>0.0.1</version>
 		</dependency>
 		<dependency>

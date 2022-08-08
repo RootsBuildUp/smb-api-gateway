@@ -65,7 +65,7 @@ logging:
     org.springframework.security: WARN
     org.hibernate: WARN
     org.apache: WARN
-    com.babl.smbspringcloudgateway: INFO
+    com.smb.springcloudgateway.springcloudgateway: INFO
 endpoints:
   beans:
     id: springbeans

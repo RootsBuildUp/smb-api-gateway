@@ -31,6 +31,10 @@ public class CustomRouteLocator {
     @Bean
     public RouteLocator customGatewayRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
+                .route(r -> r.path("/um/v1/**")
+                        .filters(f -> f.circuitBreaker(c -> c.setName("um-module") // circuit breaker
+                                .setFallbackUri("/inCaseOfFailureUseThis")))
+                        .uri("lb://um-module"))
                 .route(r -> r.path("/catalogs/**")
                         .filters(f -> f.circuitBreaker(c -> c.setName("movie-catalog-service")// circuit breaker
                                 .setFallbackUri("/inCaseOfFailureUseThis")))
@@ -39,8 +43,8 @@ public class CustomRouteLocator {
                         .filters(f -> f.circuitBreaker(c -> c.setName("ratings-info-service") // circuit breaker
                                 .setFallbackUri("/inCaseOfFailureUseThis")))
                         .uri("lb://ratings-info-service"))
-                .route(r -> r.path("/mobil/mobile_api/api/**")
-                        .uri("http://15.235.86.71"))
+//                .route(r -> r.path("/mobil/mobile_api/api/**")
+//                        .uri("http://15.235.86.71"))
                 .build();
     }
 }
