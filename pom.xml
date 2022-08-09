@@ -83,6 +83,12 @@
 			<artifactId>um-model</artifactId>
 			<version>0.0.1</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/cn.hutool/hutool-core -->
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-core</artifactId>
+			<version>5.8.3</version>
+		</dependency>
 		<dependency>
 			<groupId>com.playtika.reactivefeign</groupId>
 			<artifactId>feign-reactor-spring-cloud-starter</artifactId>

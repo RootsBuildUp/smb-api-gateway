@@ -1,6 +1,5 @@
 package com.smb.springcloudgateway.service;
 
-import com.smb.springcloudgateway.config.gateway.FirstPreLastPostGlobalFilter;
 import com.smb.springcloudgateway.constant.Constants;
 import com.smb.springcloudgateway.exceptions.UnauthorizedException;
 import com.smb.ummodel.model.user.BearerToken;
@@ -9,6 +8,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,6 @@ import reactor.core.publisher.Mono;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
-import java.time.LocalDateTime;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.Optional;
@@ -51,25 +50,28 @@ public class GlobalFilterSecurityService {
         ServerHttpRequest httpRequest = exchange.getRequest();
         ServerHttpResponse httpResponse = exchange.getResponse();
 
+        System.err.println("=========="+httpRequest.getURI().getPath()+"=================");
         if ("OPTIONS".equalsIgnoreCase(httpRequest.getMethod().toString())) {
             httpResponse.setStatusCode(HttpStatus.OK);
             return Mono.empty();
-        }  else if (httpRequest.getPath().toString().equals("/um/v1/logMeIn")) {
-            return lastPostGlobalFilter(exchange,chain);
+        }else if (httpRequest.getURI().getPath().contains("logMeIn")) {
+            return lastPostGlobalFilter(exchange, chain);
         } else {
             validateToken(httpRequest);
-            return lastPostGlobalFilter(exchange,chain);
+            return lastPostGlobalFilter(exchange, chain);
         }
 
     }
+
     private Mono<Void> lastPostGlobalFilter(ServerWebExchange exchange,
-                                            GatewayFilterChain chain){
+                                            GatewayFilterChain chain) {
         return chain.filter(exchange)
                 .then(Mono.fromRunnable(() -> {
                     logger.info("Last Post Global Filter");
 
                 }));
     }
+
     @Transactional
     public boolean validateToken(ServerHttpRequest request) {
         String requestPath = request.getPath().toString();
@@ -83,7 +85,6 @@ public class GlobalFilterSecurityService {
         });
 
         String token = resolveFromAuthorizationHeader(request);
-        System.err.println(token);
         if (token == null) {
             System.err.println("Bearer Token Not Found or Invalid");
             throw new UnauthorizedException("Bearer Token Not Found or Invalid");
@@ -125,7 +126,6 @@ public class GlobalFilterSecurityService {
         List<String> obj = request.getHeaders().get("Authorization");
         if (obj != null) {
             String authorization = obj.get(0);
-            System.out.println(authorization);
             if (StringUtils.startsWithIgnoreCase(authorization, "bearer")) {
                 Matcher matcher = authorizationPattern.matcher(authorization);
                 if (!matcher.matches()) {

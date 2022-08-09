@@ -35,14 +35,14 @@ public class CustomRouteLocator {
                         .filters(f -> f.circuitBreaker(c -> c.setName("um-module") // circuit breaker
                                 .setFallbackUri("/inCaseOfFailureUseThis")))
                         .uri("lb://um-module"))
+                .route(r -> r.path("/rm/v1/**")
+                        .filters(f -> f.circuitBreaker(c -> c.setName("remittance-module") // circuit breaker
+                                .setFallbackUri("/inCaseOfFailureUseThis")))
+                        .uri("lb://remittance-module"))
                 .route(r -> r.path("/catalogs/**")
                         .filters(f -> f.circuitBreaker(c -> c.setName("movie-catalog-service")// circuit breaker
                                 .setFallbackUri("/inCaseOfFailureUseThis")))
                         .uri("lb://movie-catalog-service")) // If the URL has a lb scheme (e.g., lb://movie-catalog-service), it'll use the Spring Cloud LoadBalancerClient to resolve the name (i.e., movie-catalog-service) to an actual host and port.
-                .route(r -> r.path("/ratings/**")
-                        .filters(f -> f.circuitBreaker(c -> c.setName("ratings-info-service") // circuit breaker
-                                .setFallbackUri("/inCaseOfFailureUseThis")))
-                        .uri("lb://ratings-info-service"))
 //                .route(r -> r.path("/mobil/mobile_api/api/**")
 //                        .uri("http://15.235.86.71"))
                 .build();
