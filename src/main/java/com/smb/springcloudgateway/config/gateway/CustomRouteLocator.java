@@ -31,18 +31,16 @@ public class CustomRouteLocator {
     @Bean
     public RouteLocator customGatewayRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route(r -> r.path("/um/v1/**")
+                .route(r -> r.path("/um/v1/loginC/**")
                         .filters(f -> f.circuitBreaker(c -> c.setName("um-module") // circuit breaker
-                                .setFallbackUri("/inCaseOfFailureUseThis")))
-                        .uri("lb://um-module"))
+                                .setFallbackUri("/defaultfallback")))
+                        .uri("lb://um-module"))// If the URL has a lb scheme (e.g., lb://um-module), it'll use the Spring Cloud LoadBalancerClient to resolve the name (i.e., um-module) to an actual host and port.
+                .route(r -> r.path("/um/v1/workflowC/**")
+                        .uri("lb://um-module"))// If the URL has a lb scheme (e.g., lb://um-module), it'll use the Spring Cloud LoadBalancerClient to resolve the name (i.e., um-module) to an actual host and port.
                 .route(r -> r.path("/rm/v1/**")
                         .filters(f -> f.circuitBreaker(c -> c.setName("remittance-module") // circuit breaker
-                                .setFallbackUri("/inCaseOfFailureUseThis")))
+                                .setFallbackUri("/defaultfallback")))
                         .uri("lb://remittance-module"))
-                .route(r -> r.path("/catalogs/**")
-                        .filters(f -> f.circuitBreaker(c -> c.setName("movie-catalog-service")// circuit breaker
-                                .setFallbackUri("/inCaseOfFailureUseThis")))
-                        .uri("lb://movie-catalog-service")) // If the URL has a lb scheme (e.g., lb://movie-catalog-service), it'll use the Spring Cloud LoadBalancerClient to resolve the name (i.e., movie-catalog-service) to an actual host and port.
 //                .route(r -> r.path("/mobil/mobile_api/api/**")
 //                        .uri("http://15.235.86.71"))
                 .build();
