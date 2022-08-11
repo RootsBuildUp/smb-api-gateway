@@ -42,8 +42,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan("com.smb.ummodel.model")
 @EnableJpaRepositories("com.smb.ummodel.model")
 public class SpringCloudGatewayApplication {
-
-
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCloudGatewayApplication.class, args);
 	}
