@@ -5,7 +5,7 @@ spring:
   # Custom banner set in this application
   banner:
     charset: UTF-8
-    location: banner.txt
+    location : banner.txt
   profiles:
     active: dev
   application:
@@ -26,9 +26,25 @@ spring:
   cloud:
     gateway:
       enabled: true
-      add-to-simple-url-handler-mapping: true
-      handler-mapping:
-        order: 1
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            maxAge: 3600
+            allowCredentials: false
+            allowedHeaders:
+              - X-PINGOTHER
+              - x-requested-with
+              - authorization
+              - Content-Type
+              - Authorization
+              - credential
+              - X-XSRF-TOKEN
+            allowedMethods:
+              - OPTIONS
+              - GET
+              - POST
+        add-to-simple-url-handler-mapping: true
       discovery:
         locator:
           enabled: true
