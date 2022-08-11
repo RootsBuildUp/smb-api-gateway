@@ -1,0 +1,883 @@
+2022-08-10 00:18:59 INFO   --- [main] c.s.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.16 on rashedul-ThinkPad-X1-Yoga-1st with PID 59160 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-08-10 00:18:59 INFO   --- [main] c.s.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-08-10 00:19:03 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-08-10 00:19:03 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-08-10 00:19:34 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-08-10 00:19:34 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 00:19:34 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-08-10 00:19:34 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-08-10 00:19:34 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-08-10 00:19:34 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-08-10 00:19:34 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-08-10 00:19:34 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-08-10 00:19:34 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-08-10 00:19:35 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-08-10 00:19:35 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-08-10 00:19:35 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-10 00:19:35 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1660069175136 with initial instances count: 0
+2022-08-10 00:19:35 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1660069175156, current=UP, previous=STARTING]
+2022-08-10 00:19:35 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.0.11:api-gateway:8081: registering service...
+2022-08-10 00:19:35 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.0.11:api-gateway:8081 - registration status: 204
+2022-08-10 00:19:35 INFO   --- [main] c.s.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 36.804 seconds (JVM running for 37.837)
+2022-08-10 00:20:05 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Disable delta property : false
+2022-08-10 00:20:05 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-08-10 00:20:05 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-08-10 00:20:05 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Application is null : false
+2022-08-10 00:20:05 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-08-10 00:20:05 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Application version is -1: false
+2022-08-10 00:20:05 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-08-10 00:20:05 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : The response status is 200
+2022-08-10 00:20:45 INFO   --- [http-nio-8081-exec-2] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:20:45 INFO   --- [http-nio-8081-exec-2] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:20:45 INFO   --- [http-nio-8081-exec-2] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:20:45 INFO   --- [http-nio-8081-exec-2] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:20:45 INFO   --- [http-nio-8081-exec-2] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:20:45 INFO   --- [http-nio-8081-exec-2] c.s.s.s.GlobalFilterSecurityService : postman-token [27595587-51ca-4e28-973d-e333f33abd0f]
+2022-08-10 00:20:45 INFO   --- [http-nio-8081-exec-2] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:20:45 INFO   --- [http-nio-8081-exec-2] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:20:45 INFO   --- [http-nio-8081-exec-2] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:20:46 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:20:46 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/startCase/cs_data_capture
+2022-08-10 00:20:46 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 00:20:46 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:20:46 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:20:46 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:20:47 INFO   --- [reactor-http-epoll-3] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:20:47 INFO   --- [reactor-http-epoll-2] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/startCase/cs_data_capture
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : user-agent [Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : accept [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : accept-language [en-US,en;q=0.5]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : dnt [1]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : upgrade-insecure-requests [1]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : sec-fetch-dest [document]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : sec-fetch-mode [navigate]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : sec-fetch-site [cross-site]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : pragma [no-cache]
+2022-08-10 00:22:46 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : cache-control [no-cache]
+2022-08-10 00:24:35 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : postman-token [68c8f902-a556-42c8-9353-ee02c9be82c4]
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-1] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-1] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/startCase/cs_data_capture
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-1] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-1] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-1] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:27:07 INFO   --- [http-nio-8081-exec-1] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:27:07 INFO   --- [reactor-http-epoll-1] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:27:07 INFO   --- [reactor-http-epoll-4] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:29:35 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 00:31:09 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:31:09 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:31:09 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:31:09 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:31:09 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:31:09 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : postman-token [ed46e6ac-0340-474d-9422-1e50ff4372ec]
+2022-08-10 00:31:09 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:31:09 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:31:09 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:31:09 WARN   --- [http-nio-8081-exec-6] o.s.c.l.c.RoundRobinLoadBalancer : No servers available for service: remittance-module
+2022-08-10 00:31:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:31:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:31:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:31:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:31:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:31:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : postman-token [85d5a9fd-1227-4ddc-9215-dd889db19781]
+2022-08-10 00:31:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:31:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:31:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:31:41 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:31:41 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/startCase/cs_data_capture
+2022-08-10 00:31:41 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 00:31:41 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:31:41 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:31:41 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:31:41 INFO   --- [reactor-http-epoll-3] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:31:42 INFO   --- [reactor-http-epoll-2] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:34:35 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : postman-token [e9b8a107-904e-4ec3-9c08-9d5c29c44406]
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/startCase/cs_data_capture
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:34:43 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:34:44 INFO   --- [reactor-http-epoll-1] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:34:44 INFO   --- [reactor-http-epoll-4] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:39:35 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 00:40:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:40:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:40:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:40:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:40:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:40:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : postman-token [5753f56c-f921-4db3-8994-4853a0e31a48]
+2022-08-10 00:40:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:40:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:40:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:40:53 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:40:53 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/startCase/cs_data_capture
+2022-08-10 00:40:53 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 00:40:53 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:40:53 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:40:53 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:40:54 INFO   --- [reactor-http-epoll-3] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:40:54 INFO   --- [reactor-http-epoll-2] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:44:35 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 00:45:05 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:45:05 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:45:05 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:45:05 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:45:05 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:45:05 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : postman-token [ad150875-6125-4a63-98a0-42b044b59329]
+2022-08-10 00:45:05 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:45:05 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:45:05 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:45:05 WARN   --- [http-nio-8081-exec-5] o.s.c.l.c.RoundRobinLoadBalancer : No servers available for service: remittance-module
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : postman-token [914c70ef-a70f-4d41-bc2b-c5d357a0fc33]
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/startCase/cs_data_capture
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:45:07 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:45:07 INFO   --- [reactor-http-epoll-1] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:45:07 INFO   --- [reactor-http-epoll-4] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : postman-token [fdffb367-ad9e-4ddd-a466-2ced08671b25]
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/startCase/cs_data_capture
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:48:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:48:51 INFO   --- [reactor-http-epoll-3] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:48:51 INFO   --- [reactor-http-epoll-2] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:49:35 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 00:54:17 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:54:17 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:54:17 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:54:17 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:54:17 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:54:17 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : postman-token [4b611efa-919f-4f0c-af4e-0cfb0a2a8e9f]
+2022-08-10 00:54:17 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:54:17 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:54:17 INFO   --- [http-nio-8081-exec-10] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:54:18 INFO   --- [reactor-http-epoll-4] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:54:35 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 00:57:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 00:57:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/startCase/cs_data_capture
+2022-08-10 00:57:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 00:57:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 00:57:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 00:57:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : postman-token [83b194e6-789e-4642-bbbf-507fe0ed4f8d]
+2022-08-10 00:57:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 00:57:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 00:57:50 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 00:57:50 INFO   --- [reactor-http-epoll-1] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 00:59:35 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 01:04:35 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 01:08:51 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1660072131719, current=DOWN, previous=UP]
+2022-08-10 01:08:51 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.0.11:api-gateway:8081: registering service...
+2022-08-10 01:08:51 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.0.11:api-gateway:8081 - registration status: 204
+2022-08-10 01:08:51 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-08-10 01:08:51 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-08-10 01:08:51 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-08-10 01:08:54 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-08-10 01:08:54 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.0.11:api-gateway:8081 - deregister  status: 200
+2022-08-10 01:08:54 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-08-10 10:27:42 INFO   --- [main] c.s.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.16 on rashedul-ThinkPad-X1-Yoga-1st with PID 10505 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-08-10 10:27:42 INFO   --- [main] c.s.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-08-10 10:27:45 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-08-10 10:27:45 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1660105699816 with initial instances count: 0
+2022-08-10 10:28:19 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1660105699827, current=UP, previous=STARTING]
+2022-08-10 10:28:19 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081: registering service...
+2022-08-10 10:28:19 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081 - registration status: 204
+2022-08-10 10:28:20 INFO   --- [main] c.s.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 38.819 seconds (JVM running for 40.104)
+2022-08-10 10:28:49 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Disable delta property : false
+2022-08-10 10:28:49 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-08-10 10:28:49 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-08-10 10:28:49 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Application is null : false
+2022-08-10 10:28:49 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-08-10 10:28:49 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Application version is -1: false
+2022-08-10 10:28:49 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-08-10 10:28:49 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : The response status is 200
+2022-08-10 10:33:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 10:38:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 10:43:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 10:44:43 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 10:44:45 INFO   --- [reactor-http-epoll-2] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 10:45:02 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 10:45:02 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/workflowC/startCase/cs_data_capture
+2022-08-10 10:45:02 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0yNDUyMDcxODcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.lXk3sWuKFzW-4CH-5B_k10TL86yyVp02nJjL-Dlqe-8]
+2022-08-10 10:45:02 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 10:45:02 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 10:45:02 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : postman-token [fdd62668-b96e-4602-a628-162ed7762df7]
+2022-08-10 10:45:02 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 10:45:02 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 10:45:02 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 10:45:41 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 10:45:41 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/workflowC/startCase/cs_data_capture
+2022-08-10 10:45:41 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0xNzQ2NjQzNTE3LCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoibWFrZXIxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxMCwic29sSWQiOm51bGwsInVzZXJOYW1lIjoibWFrZXIxMyIsInVzZXJHcm91cCI6Ik1BS0VSIiwiYnJhbmNoTmFtZSI6bnVsbH19.yFetqRMJrBqJlXJ9YhnYxo1qk_l8wQ6T6zXvGPgpdgM]
+2022-08-10 10:45:41 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 10:45:41 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 10:45:41 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : postman-token [43fc3091-4533-448f-8f82-c75cf8bdae8f]
+2022-08-10 10:45:41 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 10:45:41 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 10:45:41 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 10:45:42 INFO   --- [reactor-http-epoll-3] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 10:48:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 10:53:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 10:58:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:03:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:04:58 INFO   --- [http-nio-8081-exec-2] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:04:58 INFO   --- [reactor-http-epoll-4] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:04:58 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:04:58 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/workflowC/startCase/cs_data_capture
+2022-08-10 11:04:58 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 11:04:58 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 11:04:58 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 11:04:58 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOjE5NjI0NjMwMzcsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoiY3MxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxODgsInNvbElkIjoiMTAxIiwidXNlck5hbWUiOiJjczEzIiwidXNlckdyb3VwIjoiQ1MiLCJicmFuY2hOYW1lIjoiUFJJTkNJUEFMIE9GRklDRSJ9fQ.MyJs2KhXuNGEZWNZE5gIhAT04uAJnYFeqdWAeelnv54]
+2022-08-10 11:04:58 INFO   --- [reactor-http-epoll-4] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:08:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:13:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:13:39 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:13:41 INFO   --- [reactor-http-epoll-2] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:13:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:13:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/workflowC/startCase/cs_data_capture
+2022-08-10 11:13:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOjEzMTQ4MzU3OSwiYWxnIjoiSFMyNTYifQ.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoiY3MxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxODgsInNvbElkIjoiMTAxIiwidXNlck5hbWUiOiJjczEzIiwidXNlckdyb3VwIjoiQ1MiLCJicmFuY2hOYW1lIjoiUFJJTkNJUEFMIE9GRklDRSJ9fQ.mq4wBFzM0OdGKgBomXGeyAp9UFEfQYbnvy9iYNcxvII]
+2022-08-10 11:13:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 11:13:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 11:13:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : postman-token [f682c027-669e-4e8b-843b-77bb990724f6]
+2022-08-10 11:13:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 11:13:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 11:13:52 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 11:13:53 INFO   --- [reactor-http-epoll-3] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:15:22 INFO   --- [http-nio-8081-exec-4] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:15:23 INFO   --- [reactor-http-epoll-4] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:15:27 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:15:27 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/workflowC/startCase/cs_data_capture
+2022-08-10 11:15:27 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOjEzMTQ4MzU3OSwiYWxnIjoiSFMyNTYifQ.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoiY3MxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxODgsInNvbElkIjoiMTAxIiwidXNlck5hbWUiOiJjczEzIiwidXNlckdyb3VwIjoiQ1MiLCJicmFuY2hOYW1lIjoiUFJJTkNJUEFMIE9GRklDRSJ9fQ.mq4wBFzM0OdGKgBomXGeyAp9UFEfQYbnvy9iYNcxvII]
+2022-08-10 11:15:27 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 11:15:27 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 11:15:27 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : postman-token [49d16fb6-dd15-4464-833d-ffba902736d7]
+2022-08-10 11:15:27 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 11:15:27 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 11:15:27 INFO   --- [http-nio-8081-exec-6] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 11:15:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:15:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : Request path = /rm/v1/workflowC/startCase/cs_data_capture
+2022-08-10 11:15:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOjMxMDY3NDc2NCwiYWxnIjoiSFMyNTYifQ.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoiY3MxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxODgsInNvbElkIjoiMTAxIiwidXNlck5hbWUiOiJjczEzIiwidXNlckdyb3VwIjoiQ1MiLCJicmFuY2hOYW1lIjoiUFJJTkNJUEFMIE9GRklDRSJ9fQ.dRbWFj93OOFrNAna-wM1MaWfIZJPEKOA_Xs9113dDnA]
+2022-08-10 11:15:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : user-agent [PostmanRuntime/7.29.2]
+2022-08-10 11:15:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 11:15:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : postman-token [dbf76e5d-8ccb-4943-811c-7c54573d96b6]
+2022-08-10 11:15:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 11:15:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : accept-encoding [gzip, deflate, br]
+2022-08-10 11:15:40 INFO   --- [http-nio-8081-exec-7] c.s.s.s.GlobalFilterSecurityService : connection [keep-alive]
+2022-08-10 11:15:41 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:15:41 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/workflowC/startCase/cs_data_capture
+2022-08-10 11:15:41 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 11:15:41 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 11:15:41 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 11:15:41 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOjMxMDY3NDc2NCwiYWxnIjoiSFMyNTYifQ.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoiY3MxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxODgsInNvbElkIjoiMTAxIiwidXNlck5hbWUiOiJjczEzIiwidXNlckdyb3VwIjoiQ1MiLCJicmFuY2hOYW1lIjoiUFJJTkNJUEFMIE9GRklDRSJ9fQ.dRbWFj93OOFrNAna-wM1MaWfIZJPEKOA_Xs9113dDnA]
+2022-08-10 11:15:42 INFO   --- [reactor-http-epoll-4] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:15:44 INFO   --- [reactor-http-epoll-1] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:16:48 INFO   --- [http-nio-8081-exec-3] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:16:49 INFO   --- [reactor-http-epoll-3] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:16:49 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:16:49 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/workflowC/startCase/cs_data_capture
+2022-08-10 11:16:49 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 11:16:49 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 11:16:49 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 11:16:49 INFO   --- [http-nio-8081-exec-5] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi0xNzA3ODA1ODEsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoiY3MxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxODgsInNvbElkIjoiMTAxIiwidXNlck5hbWUiOiJjczEzIiwidXNlckdyb3VwIjoiQ1MiLCJicmFuY2hOYW1lIjoiUFJJTkNJUEFMIE9GRklDRSJ9fQ.KkoGtcFGBI23QBINTMrRhIrNYunl40bg-As2uLizUXI]
+2022-08-10 11:16:49 INFO   --- [reactor-http-epoll-3] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:17:30 INFO   --- [http-nio-8081-exec-8] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:17:31 INFO   --- [reactor-http-epoll-3] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:17:31 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : Pre-Filter executed
+2022-08-10 11:17:31 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : Request path = /um/v1/workflowC/startCase/cs_data_capture
+2022-08-10 11:17:31 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : user-agent [ReactorNetty/1.0.17]
+2022-08-10 11:17:31 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : host [localhost:8081]
+2022-08-10 11:17:31 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : accept [*/*]
+2022-08-10 11:17:31 INFO   --- [http-nio-8081-exec-9] c.s.s.s.GlobalFilterSecurityService : authorization [Bearer eyJyYW5kb20iOi05NDczMzMwMzUsImFsZyI6IkhTMjU2In0.eyJpc3MiOiJodHRwczovL2NpdHkzNjAudGhlY2l0eWJhbmsuY29tIiwic3ViIjoiY3MxMyIsInVzZXJJbmZvcm1hdGlvbiI6eyJ1c2VyUm9sZUlkIjoxODgsInNvbElkIjoiMTAxIiwidXNlck5hbWUiOiJjczEzIiwidXNlckdyb3VwIjoiQ1MiLCJicmFuY2hOYW1lIjoiUFJJTkNJUEFMIE9GRklDRSJ9fQ.5C13AGyug94DypSaNlIvzO2uzfDJUFa_m51DOnJATUw]
+2022-08-10 11:17:31 INFO   --- [reactor-http-epoll-3] c.s.s.s.GlobalFilterSecurityService : Last Post Global Filter
+2022-08-10 11:18:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:23:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:28:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:33:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:38:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:43:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:48:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:53:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 11:58:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:03:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:08:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:13:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:18:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:23:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:28:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:33:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:38:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:43:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:48:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:53:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 12:58:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:03:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:08:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:13:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:18:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:23:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:28:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:33:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:38:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:43:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:48:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:53:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 13:58:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:03:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:08:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:13:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:18:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:23:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:28:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:33:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:38:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:43:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:48:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:53:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 14:58:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 15:03:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 15:08:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 15:13:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 15:18:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 15:23:19 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 15:26:48 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1660123608032, current=DOWN, previous=UP]
+2022-08-10 15:26:48 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081: registering service...
+2022-08-10 15:26:48 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081 - registration status: 204
+2022-08-10 15:26:48 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-08-10 15:26:48 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-08-10 15:26:48 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-08-10 15:26:51 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-08-10 15:26:51 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081 - deregister  status: 200
+2022-08-10 15:26:51 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient
+2022-08-10 18:05:14 INFO   --- [main] c.s.s.SpringCloudGatewayApplication : Starting SpringCloudGatewayApplication using Java 11.0.16 on rashedul-ThinkPad-X1-Yoga-1st with PID 26007 (/home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway/target/classes started by rashedul in /home/rashedul/Project/city-bank/back-end/smb-spring-cloud-gateway)
+2022-08-10 18:05:14 INFO   --- [main] c.s.s.SpringCloudGatewayApplication : The following 1 profile is active: "dev"
+2022-08-10 18:05:17 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Starting...
+2022-08-10 18:05:18 INFO   --- [main] c.z.h.HikariDataSource : HikariPool-1 - Start completed.
+2022-08-10 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Initializing Eureka in region us-east-1
+2022-08-10 18:05:58 INFO   --- [main] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Disable delta property : false
+2022-08-10 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-08-10 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-08-10 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Application is null : false
+2022-08-10 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-08-10 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Application version is -1: true
+2022-08-10 18:05:58 INFO   --- [main] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-08-10 18:05:59 INFO   --- [main] c.n.d.DiscoveryClient : The response status is 200
+2022-08-10 18:05:59 INFO   --- [main] c.n.d.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2022-08-10 18:05:59 INFO   --- [main] c.n.d.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-10 18:05:59 INFO   --- [main] c.n.d.DiscoveryClient : Discovery Client initialized at timestamp 1660133159370 with initial instances count: 0
+2022-08-10 18:05:59 INFO   --- [main] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1660133159383, current=UP, previous=STARTING]
+2022-08-10 18:05:59 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081: registering service...
+2022-08-10 18:05:59 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081 - registration status: 204
+2022-08-10 18:05:59 INFO   --- [main] c.s.s.SpringCloudGatewayApplication : Started SpringCloudGatewayApplication in 46.14 seconds (JVM running for 47.389)
+2022-08-10 18:06:29 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Disable delta property : false
+2022-08-10 18:06:29 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Single vip registry refresh property : null
+2022-08-10 18:06:29 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Force full registry fetch : false
+2022-08-10 18:06:29 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Application is null : false
+2022-08-10 18:06:29 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Registered Applications size is zero : true
+2022-08-10 18:06:29 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Application version is -1: false
+2022-08-10 18:06:29 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : Getting all instance registry info from the eureka server
+2022-08-10 18:06:29 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : The response status is 200
+2022-08-10 18:10:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 18:15:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 18:20:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 18:25:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 18:30:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 18:35:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 18:40:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 18:45:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 18:50:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 18:55:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 19:00:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 19:05:58 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 22:10:50 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 22:15:50 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 22:20:50 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 22:25:50 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 22:30:50 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 22:35:50 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 22:40:50 INFO   --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2022-08-10 22:42:52 INFO   --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.10.46:api-gateway:8081": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.10.46:api-gateway:8081": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 32 more
+
+2022-08-10 22:42:52 WARN   --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient : Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.10.46:api-gateway:8081": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+2022-08-10 22:42:52 INFO   --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.10.46:api-gateway:8081": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.10.46:api-gateway:8081": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 20 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 33 more
+
+2022-08-10 22:42:52 WARN   --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient : Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.10.46:api-gateway:8081": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+2022-08-10 22:42:52 ERROR  --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-08-10 22:42:55 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2022-08-10 22:42:55 WARN   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+2022-08-10 22:42:55 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 36 more
+
+2022-08-10 22:42:55 WARN   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient : Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+2022-08-10 22:42:55 INFO   --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-08-10 22:43:12 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1660149792222, current=DOWN, previous=UP]
+2022-08-10 22:43:12 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081: registering service...
+2022-08-10 22:43:12 INFO   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2022-08-10 22:43:12 WARN   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+2022-08-10 22:43:12 WARN   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-08-10 22:43:12 WARN   --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.InstanceInfoReplicator : There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-08-10 22:43:12 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2022-08-10 22:43:13 INFO   --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource : HikariPool-1 - Shutdown completed.
+2022-08-10 22:43:13 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Shutting down DiscoveryClient ...
+2022-08-10 22:43:16 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Unregistering ...
+2022-08-10 22:43:16 INFO   --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.10.46:api-gateway:8081": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.10.46:api-gateway:8081": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 53 more
+
+2022-08-10 22:43:16 WARN   --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/192.168.10.46:api-gateway:8081": Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+2022-08-10 22:43:16 ERROR  --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : DiscoveryClient_API-GATEWAY/192.168.10.46:api-gateway:8081 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-08-10 22:43:16 INFO   --- [SpringApplicationShutdownHook] c.n.d.DiscoveryClient : Completed shut down of DiscoveryClient

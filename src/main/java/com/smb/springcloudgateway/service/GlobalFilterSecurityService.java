@@ -51,6 +51,8 @@ public class GlobalFilterSecurityService {
         ServerHttpResponse httpResponse = exchange.getResponse();
 
         System.err.println("=========="+httpRequest.getURI().getPath()+"=================");
+        System.err.println("=========="+httpRequest.getMethod().toString()+"=================");
+
         if ("OPTIONS".equalsIgnoreCase(httpRequest.getMethod().toString())) {
             httpResponse.setStatusCode(HttpStatus.OK);
             return Mono.empty();

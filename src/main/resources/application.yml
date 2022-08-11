@@ -5,7 +5,7 @@ spring:
   # Custom banner set in this application
   banner:
     charset: UTF-8
-    location : banner.txt
+    location: banner.txt
   profiles:
     active: dev
   application:
@@ -26,6 +26,9 @@ spring:
   cloud:
     gateway:
       enabled: true
+      add-to-simple-url-handler-mapping: true
+      handler-mapping:
+        order: 1
       discovery:
         locator:
           enabled: true
