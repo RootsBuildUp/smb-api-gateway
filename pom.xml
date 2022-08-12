@@ -84,7 +84,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.smb</groupId>
-			<artifactId>um-model</artifactId>
+			<artifactId>core-model</artifactId>
 			<version>0.0.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/cn.hutool/hutool-core -->
@@ -151,7 +151,7 @@
 		<repository>
 			<id>repsy</id>
 			<name>My Private Maven Repository on Repsy</name>
-			<url>https://repo.repsy.io/mvn/rashedul/smb-um-model</url>
+			<url>https://repo.repsy.io/mvn/rashedul/smb-core-model</url>
 		</repository>
 	</repositories>
 

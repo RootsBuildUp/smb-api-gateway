@@ -30,10 +30,10 @@ public class CustomRouteLocator {
     @Bean
     public RouteLocator customGatewayRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route(r -> r.path("/um-module/**")
-                        .filters(f -> f.circuitBreaker(c -> c.setName("um-module") // circuit breaker
+                .route(r -> r.path("/core-module/**")
+                        .filters(f -> f.circuitBreaker(c -> c.setName("core-module") // circuit breaker
                                 .setFallbackUri("/defaultfallback")))
-                        .uri("lb://um-module"))// If the URL has a lb scheme (e.g., lb://um-module), it'll use the Spring Cloud LoadBalancerClient to resolve the name (i.e., um-module) to an actual host and port.
+                        .uri("lb://core-module"))// If the URL has a lb scheme (e.g., lb://um-module), it'll use the Spring Cloud LoadBalancerClient to resolve the name (i.e., um-module) to an actual host and port.
               .route(r -> r.path("/remittance-module/**")
                         .filters(f -> f.circuitBreaker(c -> c.setName("remittance-module") // circuit breaker
                                 .setFallbackUri("/defaultfallback")))

@@ -38,9 +38,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableAutoConfiguration(exclude = { ErrorMvcAutoConfiguration.class })
-@ComponentScan(basePackages = {"com.smb.springcloudgateway","com.smb.ummodel.model"})
-@EntityScan("com.smb.ummodel.model")
-@EnableJpaRepositories("com.smb.ummodel.model")
+@ComponentScan(basePackages = {"com.smb.springcloudgateway","com.smb.coremodel.model"})
+@EntityScan("com.smb.coremodel.model")
+@EnableJpaRepositories("com.smb.coremodel.model")
 public class SpringCloudGatewayApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCloudGatewayApplication.class, args);

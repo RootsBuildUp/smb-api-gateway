@@ -1,7 +1,7 @@
 package com.smb.springcloudgateway.redis.service;
 
-import com.smb.ummodel.redis.model.OauthAccessToken;
-import com.smb.ummodel.redis.repo.OAuthTokenRepo;
+import com.smb.coremodel.redis.model.OauthAccessToken;
+import com.smb.coremodel.redis.repo.OAuthTokenRepo;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Repository;

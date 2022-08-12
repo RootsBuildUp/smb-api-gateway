@@ -2,8 +2,8 @@ package com.smb.springcloudgateway.service;
 
 import com.smb.springcloudgateway.constant.Constants;
 import com.smb.springcloudgateway.exceptions.UnauthorizedException;
-import com.smb.ummodel.model.user.BearerToken;
-import com.smb.ummodel.model.user.BearerTokenRepository;
+import com.smb.coremodel.model.user.BearerToken;
+import com.smb.coremodel.model.user.BearerTokenRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
