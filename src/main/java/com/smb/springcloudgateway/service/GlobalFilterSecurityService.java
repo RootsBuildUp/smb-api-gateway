@@ -53,10 +53,11 @@ public class GlobalFilterSecurityService {
         System.err.println("=========="+httpRequest.getURI().getPath()+"=================");
         System.err.println("=========="+httpRequest.getMethod().toString()+"=================");
 
+        String uri = httpRequest.getURI().getPath();
         if ("OPTIONS".equalsIgnoreCase(httpRequest.getMethod().toString())) {
             httpResponse.setStatusCode(HttpStatus.OK);
             return Mono.empty();
-        }else if (httpRequest.getURI().getPath().contains("logMeIn")) {
+        }else if (uri.contains("/logMeIn") || uri.contains("/forgetPass/") || uri.contains("/users/forceLogoutSelf/") || uri.contains("/external/api/getBearerToken")) {
             return lastPostGlobalFilter(exchange, chain);
         } else {
             validateToken(httpRequest);
@@ -76,15 +77,15 @@ public class GlobalFilterSecurityService {
 
     @Transactional
     public boolean validateToken(ServerHttpRequest request) {
-        String requestPath = request.getPath().toString();
-        log.info("Request path = " + requestPath);
-        System.out.println("========= Request Body =============");
-        HttpHeaders headers = request.getHeaders();
-        Set<String> headerNames = headers.keySet();
-
-        headerNames.forEach((header) -> {
-            log.info(header + " " + headers.get(header));
-        });
+//        String requestPath = request.getPath().toString();
+//        log.info("Request path = " + requestPath);
+//        System.out.println("========= Request Body =============");
+//        HttpHeaders headers = request.getHeaders();
+//        Set<String> headerNames = headers.keySet();
+//
+//        headerNames.forEach((header) -> {
+//            log.info(header + " " + headers.get(header));
+//        });
 
         String token = resolveFromAuthorizationHeader(request);
         if (token == null) {
