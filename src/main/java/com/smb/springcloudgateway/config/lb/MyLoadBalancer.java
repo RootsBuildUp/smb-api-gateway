@@ -23,7 +23,10 @@ public class MyLoadBalancer {
     private DiscoveryClient discoveryClient;
 
     /**
-     * according to serviceId Filter available services * * @param serviceId service ID * @param request The current request * @return
+     * according to serviceId Filter available services
+     * @param serviceId service ID
+     * @param request The current request
+     * @return
      */
     public ServiceInstance choose(String serviceId, ServerHttpRequest request) {
 

@@ -1,5 +1,7 @@
 ## dev, production, stage common binding config
-
+server:
+  reactive:
+    context-path: /api-gateway
 ## spring config
 spring:
   # Custom banner set in this application

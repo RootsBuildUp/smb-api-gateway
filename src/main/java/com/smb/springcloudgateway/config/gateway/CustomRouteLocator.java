@@ -38,6 +38,10 @@ public class CustomRouteLocator {
                         .filters(f -> f.circuitBreaker(c -> c.setName("remittance-module") // circuit breaker
                                 .setFallbackUri("/defaultfallback")))
                         .uri("lb://remittance-module"))
+                .route(r -> r.path("/integration-module/**")
+                        .filters(f -> f.circuitBreaker(c -> c.setName("integration-module") // circuit breaker
+                                .setFallbackUri("/defaultfallback")))
+                        .uri("lb://integration-module"))
 //                .route(r -> r.path("/mobil/mobile_api/api/**")
 //                        .uri("http://15.235.86.71"))
                 .build();
