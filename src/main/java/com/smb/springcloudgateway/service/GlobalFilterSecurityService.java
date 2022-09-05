@@ -18,16 +18,15 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Service;
+import org.springframework.util.AntPathMatcher;
 import org.springframework.util.StringUtils;
 import org.springframework.web.server.ServerWebExchange;
+import org.springframework.web.util.UriTemplate;
 import reactor.core.publisher.Mono;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -41,31 +40,116 @@ public class GlobalFilterSecurityService {
     private static final Pattern authorizationPattern = Pattern.compile("^Bearer (?<token>[a-zA-Z0-9-._~+/]+)=*$", 2);
     private static final Pattern requestPattern = Pattern.compile("(?<token>[a-zA-Z0-9-._~+/]+)=*$");
 
+    private AntPathMatcher pathMatcher;
+    private UriTemplate rootFileGetUriTemplate;
+    private UriTemplate tomcatFileGetUriTemplate;
+    private UriTemplate rootFileGetByTypeUriTemplate;
+    private UriTemplate tomcatFileGetByTypeUriTemplate;
+    private UriTemplate rootSignatureGetTemplate;
+    private UriTemplate tomcatSignatureGetTemplate;
+    private UriTemplate rootIntgrSignatureTemplate;
+    private UriTemplate tomcatIntgrSignatureTemplate;
+    private UriTemplate rootIntgrPlatformSignatureTemplate;
+    private UriTemplate tomcatIntgrPlatformSignatureTemplate;
+    private UriTemplate rootIntgrMultiSignatureTemplate;
+    private UriTemplate tomcatIntgrMultiSignatureTemplate;
+
+    private void uriTemplateSet(){
+        this.pathMatcher = new AntPathMatcher();
+        this.rootFileGetUriTemplate = new UriTemplate("/file/{name}/{token}");
+        this.tomcatFileGetUriTemplate = new UriTemplate("/{baseUri}/file/{name}/{token}");
+        this.rootFileGetByTypeUriTemplate = new UriTemplate("/file/getByType/{appId}/{type}/{token}");
+        this.tomcatFileGetByTypeUriTemplate = new UriTemplate("/{baseUri}/file/getByType/{appId}/{type}/{token}");
+        this.rootSignatureGetTemplate = new UriTemplate("/signaturePhoto/{appId}/{type}/{token}");
+        this.tomcatSignatureGetTemplate = new UriTemplate("/{baseUri}/signaturePhoto/{appId}/{type}/{token}");
+        this.rootIntgrSignatureTemplate = new UriTemplate("/intgr/signature/{accountNo}/{token}");
+        this.tomcatIntgrSignatureTemplate = new UriTemplate("/{baseUri}/intgr/signature/{accountNo}/{token}");
+        this.rootIntgrPlatformSignatureTemplate = new UriTemplate("/intgr/signature/{platform}/{accountNo}/{token}");
+        this.tomcatIntgrPlatformSignatureTemplate = new UriTemplate("/{baseUri}/intgr/signature/{platform}/{accountNo}/{token}");
+        this.rootIntgrMultiSignatureTemplate = new UriTemplate("/intgr/signaturePart/{platform}/{id}/{token}");
+        this.tomcatIntgrMultiSignatureTemplate = new UriTemplate("/{baseUri}/intgr/signaturePart/{platform}/{id}/{token}");
+    }
+
     final Logger logger =
             LoggerFactory.getLogger(GlobalFilterSecurityService.class);
 
     public Mono<Void> filter(ServerWebExchange exchange,
                              GatewayFilterChain chain) {
+        this.uriTemplateSet();
         logger.info("Pre-Filter executed");
         ServerHttpRequest httpRequest = exchange.getRequest();
         ServerHttpResponse httpResponse = exchange.getResponse();
 
-        System.err.println("=========="+httpRequest.getURI().getPath()+"=================");
-        System.err.println("=========="+httpRequest.getMethod().toString()+"=================");
+        System.err.println("==========" + httpRequest.getURI().getPath() + "=================");
+        System.err.println("==========" + httpRequest.getMethod().toString() + "=================");
 
         String uri = httpRequest.getURI().getPath();
         if ("OPTIONS".equalsIgnoreCase(httpRequest.getMethod().toString())) {
             httpResponse.setStatusCode(HttpStatus.OK);
             return Mono.empty();
-        }else if (uri.contains("/logMeIn") || uri.contains("/forgetPass/") || uri.contains("/users/forceLogoutSelf/") || uri.contains("/external/api/getBearerToken")) {
+        } else if (uri.contains("/logMeIn") || uri.contains("/forgetPass/") || uri.contains("/users/forceLogoutSelf/") || uri.contains("/external/api/getBearerToken")) {
             return lastPostGlobalFilter(exchange, chain);
+        } else if (pathMatcher.match("/file/*/*", uri)) {
+            Map<String, String> variables = rootFileGetUriTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/*/file/*/*", uri)) {
+            Map<String, String> variables = tomcatFileGetUriTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/file/getByType/*/*/*", uri)) {
+            Map<String, String> variables = rootFileGetByTypeUriTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/*/file/getByType/*/*/*", uri)) {
+            Map<String, String> variables = tomcatFileGetByTypeUriTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/signaturePhoto/*/*/*", uri)) {
+            Map<String, String> variables = rootSignatureGetTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/*/signaturePhoto/*/*/*", uri)) {
+            Map<String, String> variables = tomcatSignatureGetTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/intgr/signature/*/*", uri)) {
+            Map<String, String> variables = rootIntgrSignatureTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/*/intgr/signature/*/*", uri)) {
+            Map<String, String> variables = tomcatIntgrSignatureTemplate.match(uri);
+            String token = variables.get("token");
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/intgr/signature/*/*/*", uri)) {
+            Map<String, String> variables = rootIntgrPlatformSignatureTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/*/intgr/signature/*/*/*", uri)) {
+            Map<String, String> variables = tomcatIntgrPlatformSignatureTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/intgr/signaturePart/*/*/*", uri)) {
+            Map<String, String> variables = rootIntgrMultiSignatureTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
+        } else if (pathMatcher.match("/*/intgr/signaturePart/*/*/*", uri)) {
+            Map<String, String> variables = tomcatIntgrMultiSignatureTemplate.match(uri);
+            setUriChecking(variables);
+            return lastPostGlobalFilter(exchange,chain);
         } else {
-            validateToken(httpRequest);
+            String token = resolveFromAuthorizationHeader(httpRequest);
+            validateToken(token);
             return lastPostGlobalFilter(exchange, chain);
         }
-
     }
 
+    private void setUriChecking(Map<String, String> variables){
+        String token = variables.get("token");
+        if (!validateToken(token))
+            throw new UnauthorizedException("Invalid permission");
+    }
     private Mono<Void> lastPostGlobalFilter(ServerWebExchange exchange,
                                             GatewayFilterChain chain) {
         return chain.filter(exchange)
@@ -76,7 +160,7 @@ public class GlobalFilterSecurityService {
     }
 
     @Transactional
-    public boolean validateToken(ServerHttpRequest request) {
+    public boolean validateToken(String token) {
 //        String requestPath = request.getPath().toString();
 //        log.info("Request path = " + requestPath);
 //        System.out.println("========= Request Body =============");
@@ -87,7 +171,6 @@ public class GlobalFilterSecurityService {
 //            log.info(header + " " + headers.get(header));
 //        });
 
-        String token = resolveFromAuthorizationHeader(request);
         if (token == null) {
             System.err.println("Bearer Token Not Found or Invalid");
             throw new UnauthorizedException("Bearer Token Not Found or Invalid");
