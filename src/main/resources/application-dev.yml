@@ -23,5 +23,5 @@ eureka:
       management.context-path: /actuator
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8011}/eureka
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8001}/eureka
 
