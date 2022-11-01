@@ -18,7 +18,10 @@ spring:
   main:
     lazy-initialization: true
     web-application-type: reactive
-
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
   ## Spring Jackson binding config
   jackson:
     serialization:

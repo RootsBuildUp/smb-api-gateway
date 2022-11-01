@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8011
 
 ## Database config
 spring:
@@ -8,10 +8,7 @@ spring:
     username: smb_um
     password: smb_um4321
     driver-class-name: oracle.jdbc.OracleDriver
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: validate
+
   main:
     allow-bean-definition-overriding: true
 
@@ -19,12 +16,12 @@ spring:
 ## management config
 eureka:
   instance:
-    status-page-url: ${EUREKA_SERVICE_URL:http://localhost:8081}/actuator
-    health-check-url: ${EUREKA_SERVICE_URL:http://localhost:8081}/actuator
-    home-page-url: ${EUREKA_SERVICE_URL:http://localhost:8081}/
+    status-page-url: ${EUREKA_SERVICE_URL:http://localhost:8011}/actuator
+    health-check-url: ${EUREKA_SERVICE_URL:http://localhost:8011}/actuator
+    home-page-url: ${EUREKA_SERVICE_URL:http://localhost:8011}/
     metadata-map:
       management.context-path: /actuator
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8011}/eureka
 

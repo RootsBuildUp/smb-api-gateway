@@ -7,6 +7,7 @@ import com.smb.coremodel.model.user.BearerTokenRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.slf4j.Logger;
@@ -24,8 +25,12 @@ import org.springframework.web.server.ServerWebExchange;
 import org.springframework.web.util.UriTemplate;
 import reactor.core.publisher.Mono;
 
+import javax.crypto.Cipher;
+import javax.crypto.NoSuchPaddingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
+import java.nio.charset.StandardCharsets;
+import java.security.*;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -91,63 +96,63 @@ public class GlobalFilterSecurityService {
             return lastPostGlobalFilter(exchange, chain);
         } else if (pathMatcher.match("/file/*/*", uri)) {
             Map<String, String> variables = rootFileGetUriTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/*/file/*/*", uri)) {
             Map<String, String> variables = tomcatFileGetUriTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/file/getByType/*/*/*", uri)) {
             Map<String, String> variables = rootFileGetByTypeUriTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/*/file/getByType/*/*/*", uri)) {
             Map<String, String> variables = tomcatFileGetByTypeUriTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/signaturePhoto/*/*/*", uri)) {
             Map<String, String> variables = rootSignatureGetTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/*/signaturePhoto/*/*/*", uri)) {
             Map<String, String> variables = tomcatSignatureGetTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/intgr/signature/*/*", uri)) {
             Map<String, String> variables = rootIntgrSignatureTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/*/intgr/signature/*/*", uri)) {
             Map<String, String> variables = tomcatIntgrSignatureTemplate.match(uri);
             String token = variables.get("token");
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/intgr/signature/*/*/*", uri)) {
             Map<String, String> variables = rootIntgrPlatformSignatureTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/*/intgr/signature/*/*/*", uri)) {
             Map<String, String> variables = tomcatIntgrPlatformSignatureTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/intgr/signaturePart/*/*/*", uri)) {
             Map<String, String> variables = rootIntgrMultiSignatureTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else if (pathMatcher.match("/*/intgr/signaturePart/*/*/*", uri)) {
             Map<String, String> variables = tomcatIntgrMultiSignatureTemplate.match(uri);
-            setUriChecking(variables);
+            setUriChecking(variables,httpRequest);
             return lastPostGlobalFilter(exchange,chain);
         } else {
             String token = resolveFromAuthorizationHeader(httpRequest);
-            validateToken(token);
+            validateToken(token, httpRequest);
             return lastPostGlobalFilter(exchange, chain);
         }
     }
 
-    private void setUriChecking(Map<String, String> variables){
+    private void setUriChecking(Map<String, String> variables, ServerHttpRequest request){
         String token = variables.get("token");
-        if (!validateToken(token))
+        if (!validateToken(token, request))
             throw new UnauthorizedException("Invalid permission");
     }
     private Mono<Void> lastPostGlobalFilter(ServerWebExchange exchange,
@@ -160,7 +165,7 @@ public class GlobalFilterSecurityService {
     }
 
     @Transactional
-    public boolean validateToken(String token) {
+    public boolean validateToken(String token, ServerHttpRequest request) {
 //        String requestPath = request.getPath().toString();
 //        log.info("Request path = " + requestPath);
 //        System.out.println("========= Request Body =============");
@@ -242,5 +247,31 @@ public class GlobalFilterSecurityService {
             }
         }
         return null;
+    }
+
+    @SneakyThrows
+    private void getEncryptedMessageBytesRSA(String token, HttpServletRequest httpServletRequest){
+        KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
+        generator.initialize(2048);
+        KeyPair pair = generator.generateKeyPair();
+        PublicKey publicKey = pair.getPublic();
+        Cipher encryptCipher = Cipher.getInstance("RSA");
+        encryptCipher.init(Cipher.ENCRYPT_MODE, publicKey);
+        byte[] secretMessageBytes = token.getBytes(StandardCharsets.UTF_8);
+        byte[] tokenEncrypted = encryptCipher.doFinal(secretMessageBytes);
+        httpServletRequest.setAttribute("tokenEncrypted",tokenEncrypted);
+    }
+
+    @SneakyThrows
+    private Boolean getDecryptCipherMessageBytesRSA(byte[] tokenEncrypted, String token){
+        KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
+        generator.initialize(2048);
+        KeyPair pair = generator.generateKeyPair();
+        PrivateKey privateKey = pair.getPrivate();
+        Cipher decryptCipher = Cipher.getInstance("RSA");
+        decryptCipher.init(Cipher.DECRYPT_MODE, privateKey);
+        byte[] decryptedMessageBytes = decryptCipher.doFinal(tokenEncrypted);
+        String decryptedToken = new String(decryptedMessageBytes, StandardCharsets.UTF_8);
+        return token == decryptedToken;
     }
 }
