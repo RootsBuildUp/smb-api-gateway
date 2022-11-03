@@ -16,4 +16,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_SERVICE_URL:http://192.168.10.230:8001}/eureka
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 1
+    #    metadataMap:
+    #      instanceId: ${spring.application.name}:${spring.application.instance_id:9011}
+    instanceId: ${spring.application.name}:${spring.application.instance_id:8011}
 
