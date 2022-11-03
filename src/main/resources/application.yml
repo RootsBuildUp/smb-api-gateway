@@ -9,7 +9,7 @@ spring:
     charset: UTF-8
     location : banner.txt
   profiles:
-    active: dev
+    active: stage
   application:
     name: @project.artifactId@
     version: @project.version@
