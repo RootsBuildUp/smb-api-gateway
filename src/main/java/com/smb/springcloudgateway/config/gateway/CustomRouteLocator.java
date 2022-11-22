@@ -37,7 +37,8 @@ public class CustomRouteLocator {
         RouteLocatorBuilder.Builder builder = routeLocatorBuilder.routes();
         infos.forEach(ob->{
           if(ob.getIsActive() && ob.getIsLB()) {
-              System.out.println(ob);
+              System.out.println("============== LB ===================");
+
               System.out.println(ob.getPathName()+ " "+ob.getRouteName()+ " "+ob.getFallbackName()+" "+ob.getUriName() );
               builder.route(r -> r.path(ob.getPathName())
                               .filters(f -> f.circuitBreaker(c -> c.setName(ob.getRouteName()) // circuit breaker
@@ -45,6 +46,9 @@ public class CustomRouteLocator {
                               .uri(ob.getUriName()));// If the URL has a lb scheme (e.g., lb://um-module), it'll use the Spring Cloud LoadBalancerClient to resolve the name (i.e., um-module) to an actual host and port.
 
           } else if (ob.getIsActive() && !ob.getIsLB()) {
+              System.out.println("============== NOT LB ===================");
+
+              System.out.println(ob.getPathName()+ " "+ob.getRouteName()+ " "+ob.getFallbackName()+" "+ob.getUriName());
                       builder.route(r -> r.path(ob.getPathName())
                         .uri(ob.getUriName()));
           }

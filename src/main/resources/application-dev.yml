@@ -4,9 +4,12 @@ server:
 ## Database config
 spring:
   datasource:
-    url: jdbc:oracle:thin:@192.168.10.233:1521:ORCLCDB
-    username: smb_um
-    password: smb_um4321
+    url: jdbc:oracle:thin:@192.168.96.211:1521:testdb
+    username: test_360
+    password: test4321
+#    url: jdbc:oracle:thin:@192.168.10.233:1521:ORCLCDB
+#    username: smb_um
+#    password: smb_um4321
     driver-class-name: oracle.jdbc.OracleDriver
 
   main:
@@ -16,9 +19,9 @@ spring:
 ## management config
 eureka:
   instance:
-    status-page-url: ${EUREKA_SERVICE_URL:http://localhost:8011}/actuator
-    health-check-url: ${EUREKA_SERVICE_URL:http://localhost:8011}/actuator
-    home-page-url: ${EUREKA_SERVICE_URL:http://localhost:8011}/
+    status-page-url: ${EUREKA_SERVICE_URL:http://localhost:8001}/actuator
+    health-check-url: ${EUREKA_SERVICE_URL:http://localhost:8001}/actuator
+    home-page-url: ${EUREKA_SERVICE_URL:http://localhost:8001}/
     metadata-map:
       management.context-path: /actuator
   client:
