@@ -4,13 +4,9 @@ server:
 ## Database config
 spring:
   datasource:
-    datasource:
-      url: jdbc:oracle:thin:@192.168.96.211:1521:testdb
-      username: test_360
-      password: test4321
-    #    url: jdbc:oracle:thin:@192.168.10.233:1521:ORCLCDB
-    #    username: smb_um
-    #    password: smb_um4321
+    url: jdbc:oracle:thin:@192.168.10.233:1521:ORCLCDB
+    username: smb_um
+    password: smb_um4321
     driver-class-name: oracle.jdbc.OracleDriver
 
   main:
@@ -19,11 +15,11 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVICE_URL:http://192.168.10.230:8001}/eureka
+      defaultZone: ${EUREKA_SERVICE_URL:http://192.168.10.230:9001}/eureka
   instance:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 1
     #    metadataMap:
     #      instanceId: ${spring.application.name}:${spring.application.instance_id:8011}
-    instanceId: ${spring.application.name}:${spring.application.instance_id:8011}
+    instanceId: ${spring.application.name}:${spring.application.instance_id:9011}
 
