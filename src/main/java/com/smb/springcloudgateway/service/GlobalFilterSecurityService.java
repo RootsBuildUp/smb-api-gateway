@@ -1,6 +1,8 @@
 package com.smb.springcloudgateway.service;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.smb.springcloudgateway.constant.Constants;
+import com.smb.springcloudgateway.dto.UserInfoFromToken;
 import com.smb.springcloudgateway.exceptions.UnauthorizedException;
 import com.smb.coremodel.model.user.BearerToken;
 import com.smb.coremodel.model.user.BearerTokenRepository;
@@ -31,6 +33,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
+import java.security.spec.X509EncodedKeySpec;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -87,6 +90,8 @@ public class GlobalFilterSecurityService {
 
         System.err.println("==========" + httpRequest.getURI().getPath() + "=================");
         System.err.println("==========" + httpRequest.getMethod().toString() + "=================");
+        HttpHeaders headers = httpRequest.getHeaders();
+        System.out.println(headers.get("authorization"));
 
         String uri = httpRequest.getURI().getPath();
         if ("OPTIONS".equalsIgnoreCase(httpRequest.getMethod().toString())) {
@@ -157,6 +162,38 @@ public class GlobalFilterSecurityService {
     }
     private Mono<Void> lastPostGlobalFilter(ServerWebExchange exchange,
                                             GatewayFilterChain chain) {
+        HttpHeaders headers = exchange.getRequest().getHeaders();
+        System.out.println(headers.get("authorization"));
+        if(headers.get("authorization") == null){
+
+        }else {
+            String bearerToken = headers.get("authorization").get(0).replaceAll("Bearer ","");
+            UserInfoFromToken userInfoFromToken = getUserInformation(bearerToken);
+            String userNameAndRoleId = userInfoFromToken.getUserName()+userInfoFromToken.getUserRoleId();
+            Map<String,String> clientToken = setClientToken(userNameAndRoleId);
+            ServerHttpRequest mutateRequest = exchange.getRequest().mutate()
+                    .header("publicKey", clientToken.get("publicKey"))
+                    .header("clientToken", clientToken.get("tokenEncrypted"))
+                    .build();
+            exchange = exchange.mutate().request(mutateRequest).build();
+        }
+        return chain.filter(exchange)
+                .then(Mono.fromRunnable(() -> {
+                    logger.info("Last Post Global Filter");
+
+                }));
+    }
+    private Mono<Void> lastPostGlobalFilterByToken(ServerWebExchange exchange,
+                                            GatewayFilterChain chain,String token) {
+        System.out.println(token);
+        if(token == null){
+
+        }else {
+            ServerHttpRequest mutateRequest = exchange.getRequest().mutate()
+                    .header("clientToken", "key", "value")
+                    .build();
+            exchange = exchange.mutate().request(mutateRequest).build();
+        }
         return chain.filter(exchange)
                 .then(Mono.fromRunnable(() -> {
                     logger.info("Last Post Global Filter");
@@ -171,10 +208,12 @@ public class GlobalFilterSecurityService {
 //        System.out.println("========= Request Body =============");
 //        HttpHeaders headers = request.getHeaders();
 //        Set<String> headerNames = headers.keySet();
+//        System.out.println(headers.get("authorization"));
 //
 //        headerNames.forEach((header) -> {
 //            log.info(header + " " + headers.get(header));
 //        });
+
 
         if (token == null) {
             System.err.println("Bearer Token Not Found or Invalid");
@@ -250,28 +289,44 @@ public class GlobalFilterSecurityService {
     }
 
     @SneakyThrows
-    private void getEncryptedMessageBytesRSA(String token, HttpServletRequest httpServletRequest){
-        KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
-        generator.initialize(2048);
-        KeyPair pair = generator.generateKeyPair();
+    public Map<String, String> setClientToken(String token){
+        Map<String,String> map = new HashMap<>();
+        KeyPairGenerator keyPairGenerator =
+                KeyPairGenerator.getInstance("RSA");
+        SecureRandom secureRandom = new SecureRandom();
+
+        keyPairGenerator.initialize(2048,secureRandom);
+
+        KeyPair pair = keyPairGenerator.generateKeyPair();
+
         PublicKey publicKey = pair.getPublic();
-        Cipher encryptCipher = Cipher.getInstance("RSA");
-        encryptCipher.init(Cipher.ENCRYPT_MODE, publicKey);
-        byte[] secretMessageBytes = token.getBytes(StandardCharsets.UTF_8);
-        byte[] tokenEncrypted = encryptCipher.doFinal(secretMessageBytes);
-        httpServletRequest.setAttribute("tokenEncrypted",tokenEncrypted);
+
+        String publicKeyString =
+                Base64.getEncoder().encodeToString(publicKey.getEncoded());
+
+        System.out.println("public key = "+ publicKeyString);
+        map.put("publicKey",publicKeyString);
+
+        PrivateKey privateKey = pair.getPrivate();
+
+        String privateKeyString =
+                Base64.getEncoder().encodeToString(privateKey.getEncoded());
+
+        System.out.println("private key = "+ privateKeyString);
+
+        //Encrypt Hello world message
+        Cipher encryptionCipher = Cipher.getInstance("RSA");
+        encryptionCipher.init(Cipher.ENCRYPT_MODE,privateKey);
+        map.put("tokenEncrypted",Base64.getEncoder().encodeToString(encryptionCipher.doFinal(token.getBytes())));
+        return map;
     }
 
-    @SneakyThrows
-    private Boolean getDecryptCipherMessageBytesRSA(byte[] tokenEncrypted, String token){
-        KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
-        generator.initialize(2048);
-        KeyPair pair = generator.generateKeyPair();
-        PrivateKey privateKey = pair.getPrivate();
-        Cipher decryptCipher = Cipher.getInstance("RSA");
-        decryptCipher.init(Cipher.DECRYPT_MODE, privateKey);
-        byte[] decryptedMessageBytes = decryptCipher.doFinal(tokenEncrypted);
-        String decryptedToken = new String(decryptedMessageBytes, StandardCharsets.UTF_8);
-        return token == decryptedToken;
+    public static UserInfoFromToken getUserInformation(String token) {
+        if (token == null)
+            return null;
+        byte[] key = Constants.tokenSecretKey.getBytes();
+        Jws<Claims> claims = Jwts.parser().setSigningKey(key).parseClaimsJws(token);
+        ObjectMapper mapper = new ObjectMapper();
+        return mapper.convertValue(claims.getBody().get("userInformation", Map.class), UserInfoFromToken.class);
     }
 }
