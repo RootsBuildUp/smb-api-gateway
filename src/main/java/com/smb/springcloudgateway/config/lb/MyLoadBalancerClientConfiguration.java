@@ -26,13 +26,11 @@ public class MyLoadBalancerClientConfiguration {
 
     @Bean
     public MyLoadBalancer getMyLoadBalancer(DiscoveryClient discoveryClient) {
-
         return new MyLoadBalancer(discoveryClient);
     }
 
     @Bean
     public ReactiveLoadBalancerClientFilter gatewayLoadBalancerClientFilter(MyLoadBalancer myLoadBalancer, GatewayLoadBalancerProperties properties) {
-
         return new MyReactiveLoadBalancerClientFilter(properties, myLoadBalancer);
     }
 }
